@@ -60,9 +60,9 @@ A leave-one-out variant, which removes each cell from its own cluster profile, w
 
 Cite scDecontX together with the DecontX paper:
 
-> Siam, M. H. B. (2026). *scDecontX* (Version 1.0.0) [Computer software]. GitHub. https://github.com/mhbsiam/scdecontx
-
 > Yang, S., Corbett, S. E., Koga, Y., Wang, Z., Johnson, W. E., Yajima, M., & Campbell, J. D. (2020). Decontamination of ambient RNA in single-cell RNA-seq with DecontX. *Genome Biology*, 21, 57. https://doi.org/10.1186/s13059-020-1950-6
+
+> Siam, M. H. B. (2026). *scDecontX* (Version 1.0.0) [Computer software]. GitHub. https://github.com/mhbsiam/scdecontx
 
 ## Other methods
 
