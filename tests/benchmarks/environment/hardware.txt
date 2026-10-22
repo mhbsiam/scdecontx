@@ -1,0 +1,5 @@
+CPU: Apple M3 Pro, 11 cores (5 performance, 6 efficiency)
+Memory: 18 GB
+OS: macOS 27.0.1 (26A434)
+R: 4.5.0 (2025-04-11), aarch64-apple-darwin20, single-threaded EM
+Python: 3.12.12; Numba uses all 11 cores unless NUMBA_NUM_THREADS is set

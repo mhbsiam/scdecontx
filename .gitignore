@@ -1,0 +1,46 @@
+# Temp files
+.DS_Store
+*~
+buck-out/
+
+# Compiled files
+.venv/
+__pycache__/
+.*cache/
+
+# Distribution / packaging
+/dist/
+/build/
+*.egg-info/
+*.dmg
+
+# Tests and coverage
+/data/
+/node_modules/
+/.coverage*
+/coverage.xml
+/htmlcov/
+
+# Local 10x extracts from the comparison notebook
+temp_10x/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Editors
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# docs
+/docs/generated/
+/docs/_build/

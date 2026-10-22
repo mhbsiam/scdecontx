@@ -1,0 +1,5 @@
+implementation	version	source	commit	commit_date
+scdecontx	1.0.0.dev0	this repository	d033daf	2026-10-21
+R celda	1.24.0	Bioconductor 3.21	-	-
+NiRuff/decontx-python	0.2.0	https://github.com/NiRuff/decontx-python	cd86f0b1ab3808541e04acf2ff4d5dd53baf5a66	2026-08-17
+omicverse/py-decontx	0.1.0	https://github.com/omicverse/py-decontx	4c97b3261351e0a2074b3dc947f177c0d39ec394	2026-10-13

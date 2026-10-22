@@ -1,0 +1,4843 @@
+{
+ "settings": {
+  "r_rule": {
+   "max_iter": 500,
+   "convergence": 0.001
+  },
+  "seed": 12345
+ },
+ "datasets": {
+  "sim_low_s1": {
+   "group": "accuracy",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 435951,
+   "n_clusters": 5,
+   "true_mean": 0.09008743252925265,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.11584972541310748,
+   "R": {
+    "total_s": [
+     2.476,
+     2.204
+    ],
+    "umap_s": [
+     2.413,
+     2.136
+    ],
+    "em_s": [
+     0.0629999999999997,
+     0.0679999999999996
+    ],
+    "n_iter": 11,
+    "delta": [
+     9.99957958063366,
+     0.983353942175874
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008928723461884384,
+    "mean_contamination": 0.09025891152345399,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9971160312879045,
+    "true_contam_mae": 0.004664384291930903,
+    "true_contam_bias": 0.00017147899420133899,
+    "true_native_relfro": 0.04403180401800869
+   },
+   "niruff": {
+    "import_s": 1.4956706250086427,
+    "cold_s": 0.030509541975334287,
+    "warm_s": [
+     0.030788791947998106,
+     0.028668374987319112
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.597324527862014,
+     0.914140214229859
+    ],
+    "self_consistency": 0.01886124148310031,
+    "mean_contamination": 0.08583653052198106,
+    "frac_nonzero_kept": 0.807625168883659,
+    "r_contam_pearson": 0.9999296282455016,
+    "r_contam_maxdiff": 0.009567336040889773,
+    "r_counts_maxdiff": 1.4613975725865376,
+    "true_contam_pearson": 0.9970391785146313,
+    "true_contam_mae": 0.0059273213474104,
+    "true_contam_bias": -0.004250902007271592,
+    "true_native_relfro": 0.049785162994858904
+   },
+   "niruff_shared": {
+    "import_s": 0.5423889169469476,
+    "cold_s": 0.03033108392264694,
+    "warm_s": [
+     0.029550042003393173,
+     0.029260374954901636
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     9.596425927377979,
+     0.9140032954849711
+    ],
+    "self_consistency": 0.019037286738959325,
+    "mean_contamination": 0.08583213404631257,
+    "frac_nonzero_kept": 0.807645813405635,
+    "r_contam_pearson": 0.9999313680200314,
+    "r_contam_maxdiff": 0.009643896983881795,
+    "r_counts_maxdiff": 1.4613975725865376,
+    "true_contam_pearson": 0.9970390481170787,
+    "true_contam_mae": 0.005930628757753843,
+    "true_contam_bias": -0.00425529848294007,
+    "true_native_relfro": 0.04978451494884437
+   },
+   "omicverse": {
+    "import_s": 0.10021349997259676,
+    "cold_s": 0.2138127499492839,
+    "warm_s": [
+     0.20884241594467312,
+     0.20876249996945262
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.005794582153328,
+     0.9848411117145638
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0008423356323428131,
+    "mean_contamination": 0.09030744382919378,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999984255937551,
+    "r_contam_maxdiff": 0.0011026552897892318,
+    "r_counts_maxdiff": 0.5216008350517093,
+    "true_contam_pearson": 0.9971127470154045,
+    "true_contam_mae": 0.004670936371354281,
+    "true_contam_bias": 0.00022001129994113396,
+    "true_native_relfro": 0.044032771103189164
+   },
+   "omicverse_shared": {
+    "import_s": 0.0961235830327496,
+    "cold_s": 0.21163300005719066,
+    "warm_s": [
+     0.20761041704099625,
+     0.2102596249897033
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     9.999579580634762,
+     0.9833539421759431
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0008928723461881331,
+    "mean_contamination": 0.09025891152345396,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 1.5959455978986625e-15,
+    "r_counts_maxdiff": 7.638334409421077e-14,
+    "true_contam_pearson": 0.9971160312879043,
+    "true_contam_mae": 0.004664384291930898,
+    "true_contam_bias": 0.00017147899420131345,
+    "true_native_relfro": 0.04403180401800869
+   },
+   "scdecontx": {
+    "import_s": 0.3137120419414714,
+    "cold_s": 0.2861809170572087,
+    "warm_s": [
+     0.008977083023637533,
+     0.007934916066005826
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.004832414087842,
+     0.9847258023287125
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0009302504571462311,
+    "mean_contamination": 0.09030957189081742,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999992217442781,
+    "r_contam_maxdiff": 0.0006445307564042018,
+    "r_counts_maxdiff": 0.35726114460565705,
+    "true_contam_pearson": 0.9971177923056653,
+    "true_contam_mae": 0.004665985934441031,
+    "true_contam_bias": 0.00022213936156477277,
+    "true_native_relfro": 0.04403157931807351
+   },
+   "scdecontx_shared": {
+    "import_s": 0.36632608296349645,
+    "cold_s": 0.2772832909831777,
+    "warm_s": [
+     0.0062553329626098275,
+     0.00556441699154675
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.999579580633815,
+     0.9833539421758829
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0008928723461884003,
+    "mean_contamination": 0.09025891152345397,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 5.016603452090429e-16,
+    "r_counts_maxdiff": 2.2315482794965646e-14,
+    "true_contam_pearson": 0.9971160312879043,
+    "true_contam_mae": 0.004664384291930903,
+    "true_contam_bias": 0.00017147899420131974,
+    "true_native_relfro": 0.044031804018008686
+   }
+  },
+  "sim_low_s2": {
+   "group": "accuracy",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 452230,
+   "n_clusters": 5,
+   "true_mean": 0.08715452263072243,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.11981841044683278,
+   "R": {
+    "total_s": [
+     2.328,
+     2.081
+    ],
+    "umap_s": [
+     2.268,
+     2.02
+    ],
+    "em_s": [
+     0.0600000000000001,
+     0.0610000000000008
+    ],
+    "n_iter": 11,
+    "delta": [
+     9.57483868700047,
+     0.92485306686252
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008211912077356054,
+    "mean_contamination": 0.08712203078775446,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9972599860873703,
+    "true_contam_mae": 0.004643097325626362,
+    "true_contam_bias": -3.2491842967958875e-05,
+    "true_native_relfro": 0.046412135644932975
+   },
+   "niruff": {
+    "import_s": 1.4563470829743892,
+    "cold_s": 0.030693584005348384,
+    "warm_s": [
+     0.030548417009413242,
+     0.029906542040407658
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.154674554533154,
+     0.8360343659332061
+    ],
+    "self_consistency": 0.02019609783171672,
+    "mean_contamination": 0.08255210011732098,
+    "frac_nonzero_kept": 0.8146894279459567,
+    "r_contam_pearson": 0.9999216623527625,
+    "r_contam_maxdiff": 0.009790220280657376,
+    "r_counts_maxdiff": 1.4760663487560488,
+    "true_contam_pearson": 0.9972017246562502,
+    "true_contam_mae": 0.0059547651886665606,
+    "true_contam_bias": -0.004602422513401443,
+    "true_native_relfro": 0.05249898480043217
+   },
+   "niruff_shared": {
+    "import_s": 0.5567634579492733,
+    "cold_s": 0.031060416949912906,
+    "warm_s": [
+     0.030881542013958097,
+     0.02986695896834135
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     9.159878176420323,
+     0.8369423075108507
+    ],
+    "self_consistency": 0.020051618590370412,
+    "mean_contamination": 0.08259157824572512,
+    "frac_nonzero_kept": 0.8146275125489242,
+    "r_contam_pearson": 0.9999207835908822,
+    "r_contam_maxdiff": 0.009582838717469688,
+    "r_counts_maxdiff": 1.4760663487560488,
+    "true_contam_pearson": 0.9971978186294769,
+    "true_contam_mae": 0.0059338618660708066,
+    "true_contam_bias": -0.00456294438499731,
+    "true_native_relfro": 0.05248601692925126
+   },
+   "omicverse": {
+    "import_s": 0.09766224992927164,
+    "cold_s": 0.21226604201365262,
+    "warm_s": [
+     0.2065063330810517,
+     0.20904941705521196
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.580509845382627,
+     0.9261896954049061
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0007831114367711396,
+    "mean_contamination": 0.08717345815872508,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999981341750815,
+    "r_contam_maxdiff": 0.0006636196386354681,
+    "r_counts_maxdiff": 0.14838307063157286,
+    "true_contam_pearson": 0.9972685469034114,
+    "true_contam_mae": 0.004638604697182638,
+    "true_contam_bias": 1.8935528002653573e-05,
+    "true_native_relfro": 0.046411048156356306
+   },
+   "omicverse_shared": {
+    "import_s": 0.10732312500476837,
+    "cold_s": 0.2271760000148788,
+    "warm_s": [
+     0.21386204205919057,
+     0.21364833298139274
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     9.574838687000163,
+     0.9248530668625039
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0008211912077352133,
+    "mean_contamination": 0.08712203078775448,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 1.9567680809018384e-15,
+    "r_counts_maxdiff": 9.459100169806334e-14,
+    "true_contam_pearson": 0.99725998608737,
+    "true_contam_mae": 0.004643097325626368,
+    "true_contam_bias": -3.249184296793816e-05,
+    "true_native_relfro": 0.046412135644932975
+   },
+   "scdecontx": {
+    "import_s": 0.30900562508031726,
+    "cold_s": 0.2667195829562843,
+    "warm_s": [
+     0.007838916964828968,
+     0.007406499935314059
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.577917877906039,
+     0.9256137353253773
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0007880518450307239,
+    "mean_contamination": 0.0871514177900479,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999990796328542,
+    "r_contam_maxdiff": 0.0009098467145082275,
+    "r_counts_maxdiff": 0.381943125062536,
+    "true_contam_pearson": 0.9972651327527757,
+    "true_contam_mae": 0.004640054907793646,
+    "true_contam_bias": -3.1048406745346966e-06,
+    "true_native_relfro": 0.046409637795410075
+   },
+   "scdecontx_shared": {
+    "import_s": 0.30759945802856237,
+    "cold_s": 0.2967034999746829,
+    "warm_s": [
+     0.00593187496997416,
+     0.0065659580286592245
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.574838687000307,
+     0.9248530668625075
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0008211912077356054,
+    "mean_contamination": 0.08712203078775446,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 6.522560269672795e-16,
+    "r_counts_maxdiff": 1.865174681370263e-14,
+    "true_contam_pearson": 0.9972599860873705,
+    "true_contam_mae": 0.0046430973256263615,
+    "true_contam_bias": -3.2491842967954416e-05,
+    "true_native_relfro": 0.046412135644932975
+   }
+  },
+  "sim_low_s3": {
+   "group": "accuracy",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 450380,
+   "n_clusters": 5,
+   "true_mean": 0.09419737005281895,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.12460140817646313,
+   "R": {
+    "total_s": [
+     2.433,
+     2.145
+    ],
+    "umap_s": [
+     2.369,
+     2.081
+    ],
+    "em_s": [
+     0.0640000000000005,
+     0.0640000000000001
+    ],
+    "n_iter": 12,
+    "delta": [
+     9.36064887133766,
+     0.977023752104667
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0005920533120906575,
+    "mean_contamination": 0.09398659819361185,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9974701127615447,
+    "true_contam_mae": 0.004654221560540126,
+    "true_contam_bias": -0.00021077185920710393,
+    "true_native_relfro": 0.047044756279857755
+   },
+   "niruff": {
+    "import_s": 1.5262406669789925,
+    "cold_s": 0.031659375061281025,
+    "warm_s": [
+     0.03177858307026327,
+     0.03211945900693536
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.004515729750414,
+     0.8989833311733721
+    ],
+    "self_consistency": 0.020757051306247387,
+    "mean_contamination": 0.0896587645957281,
+    "frac_nonzero_kept": 0.7986278253918913,
+    "r_contam_pearson": 0.9999385204227846,
+    "r_contam_maxdiff": 0.008963851806377765,
+    "r_counts_maxdiff": 1.3979414574584546,
+    "true_contam_pearson": 0.9974128623118882,
+    "true_contam_mae": 0.005980329458065844,
+    "true_contam_bias": -0.004538605457090845,
+    "true_native_relfro": 0.053245322390111004
+   },
+   "niruff_shared": {
+    "import_s": 0.5365722499554977,
+    "cold_s": 0.03003337502013892,
+    "warm_s": [
+     0.029783291975036263,
+     0.02964045898988843
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     9.008038582298447,
+     0.8997553840345197
+    ],
+    "self_consistency": 0.02071720214235162,
+    "mean_contamination": 0.0896971981264993,
+    "frac_nonzero_kept": 0.7985634353212843,
+    "r_contam_pearson": 0.9999428097809813,
+    "r_contam_maxdiff": 0.008842886118358873,
+    "r_counts_maxdiff": 1.3979414574584546,
+    "true_contam_pearson": 0.9974185083346012,
+    "true_contam_mae": 0.005954637932488825,
+    "true_contam_bias": -0.00450017192631965,
+    "true_native_relfro": 0.05323907110480738
+   },
+   "omicverse": {
+    "import_s": 0.10265845793765038,
+    "cold_s": 0.2196306249825284,
+    "warm_s": [
+     0.2163709590677172,
+     0.21710479201283306
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.388583141403304,
+     0.9858002187882375
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0007414478189285735,
+    "mean_contamination": 0.09427610422140395,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999983502579756,
+    "r_contam_maxdiff": 0.0009978328819133919,
+    "r_counts_maxdiff": 0.2176671485157432,
+    "true_contam_pearson": 0.9974641918323933,
+    "true_contam_mae": 0.004666192131743236,
+    "true_contam_bias": 7.873416858500985e-05,
+    "true_native_relfro": 0.04703729820559607
+   },
+   "omicverse_shared": {
+    "import_s": 0.10576054104603827,
+    "cold_s": 0.22922470804769546,
+    "warm_s": [
+     0.22745416697580367,
+     0.22112145891878754
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     9.360648871337256,
+     0.977023752104641
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0005920533120908553,
+    "mean_contamination": 0.09398659819361185,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 1.5612511283791264e-15,
+    "r_counts_maxdiff": 9.71445146547012e-14,
+    "true_contam_pearson": 0.9974701127615451,
+    "true_contam_mae": 0.0046542215605401335,
+    "true_contam_bias": -0.00021077185920709052,
+    "true_native_relfro": 0.047044756279857755
+   },
+   "scdecontx": {
+    "import_s": 0.31899341696407646,
+    "cold_s": 0.29891833290457726,
+    "warm_s": [
+     0.010581917013041675,
+     0.008918666047975421
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.3879856034295,
+     0.9854597952744967
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0007389007271199066,
+    "mean_contamination": 0.09427646377023803,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999985003121961,
+    "r_contam_maxdiff": 0.001267447686116776,
+    "r_counts_maxdiff": 0.2367067795374881,
+    "true_contam_pearson": 0.9974605401335077,
+    "true_contam_mae": 0.004672027122574509,
+    "true_contam_bias": 7.909371741907443e-05,
+    "true_native_relfro": 0.04703722890037517
+   },
+   "scdecontx_shared": {
+    "import_s": 0.3141531250439584,
+    "cold_s": 0.2716228330973536,
+    "warm_s": [
+     0.006662750034593046,
+     0.005895582959055901
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.360648871337515,
+     0.9770237521046519
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0005920533120906679,
+    "mean_contamination": 0.0939865981936118,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999999999999999,
+    "r_contam_maxdiff": 6.453171330633722e-16,
+    "r_counts_maxdiff": 4.085620730620576e-14,
+    "true_contam_pearson": 0.9974701127615448,
+    "true_contam_mae": 0.004654221560540122,
+    "true_contam_bias": -0.00021077185920715234,
+    "true_native_relfro": 0.047044756279857755
+   }
+  },
+  "sim_high_s1": {
+   "group": "accuracy",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 601070,
+   "n_clusters": 5,
+   "true_mean": 0.3998521222576922,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.4544113582554491,
+   "R": {
+    "total_s": [
+     2.573,
+     2.107
+    ],
+    "umap_s": [
+     2.483,
+     2.018
+    ],
+    "em_s": [
+     0.0900000000000003,
+     0.0890000000000013
+    ],
+    "n_iter": 14,
+    "delta": [
+     4.20788341272061,
+     2.13955182483788
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009136860567423022,
+    "mean_contamination": 0.34124843429159485,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.997310497771497,
+    "true_contam_mae": 0.05875873682738842,
+    "true_contam_bias": -0.05860368796609739,
+    "true_native_relfro": 0.13066921342092927
+   },
+   "niruff": {
+    "import_s": 1.469101333990693,
+    "cold_s": 0.037504333071410656,
+    "warm_s": [
+     0.03327008301857859,
+     0.03312999999616295
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.1321320921651115,
+     2.1234665530629453
+    ],
+    "self_consistency": 0.0583623727971776,
+    "mean_contamination": 0.3390080722214146,
+    "frac_nonzero_kept": 0.5797976941121666,
+    "r_contam_pearson": 0.9999173621727664,
+    "r_contam_maxdiff": 0.008343600036248872,
+    "r_counts_maxdiff": 0.7319156941503424,
+    "true_contam_pearson": 0.9970885666044164,
+    "true_contam_mae": 0.0609391001243323,
+    "true_contam_bias": -0.06084405003627764,
+    "true_native_relfro": 0.14487730791770653
+   },
+   "niruff_shared": {
+    "import_s": 0.5609201249899343,
+    "cold_s": 0.03858549997676164,
+    "warm_s": [
+     0.03279349999502301,
+     0.032705417019315064
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     4.146671837989651,
+     2.137694469188042
+    ],
+    "self_consistency": 0.05704730692192306,
+    "mean_contamination": 0.3397201681556528,
+    "frac_nonzero_kept": 0.5781339943766949,
+    "r_contam_pearson": 0.9999865509712874,
+    "r_contam_maxdiff": 0.006219520687822753,
+    "r_counts_maxdiff": 0.6595177514080559,
+    "true_contam_pearson": 0.9973116118384974,
+    "true_contam_mae": 0.060232429760349364,
+    "true_contam_bias": -0.060131954102039406,
+    "true_native_relfro": 0.14425058057964416
+   },
+   "omicverse": {
+    "import_s": 0.09923958301078528,
+    "cold_s": 0.27924166701268405,
+    "warm_s": [
+     0.3179983750451356,
+     0.27687949989922345
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.211060219005187,
+     2.1430215855290644
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009247052681291279,
+    "mean_contamination": 0.34139734425304513,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999716262901669,
+    "r_contam_maxdiff": 0.0037831903974306635,
+    "r_counts_maxdiff": 0.13051453007824812,
+    "true_contam_pearson": 0.9972173811445936,
+    "true_contam_mae": 0.05860959996521557,
+    "true_contam_bias": -0.05845477800464709,
+    "true_native_relfro": 0.13058664195754693
+   },
+   "omicverse_shared": {
+    "import_s": 0.09734074992593378,
+    "cold_s": 0.2751587090315297,
+    "warm_s": [
+     0.27467312500812113,
+     0.2729666249360889
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     4.207883412720613,
+     2.139551824837886
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009136860567420801,
+    "mean_contamination": 0.3412484342915949,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 1.7832957333041577e-15,
+    "r_counts_maxdiff": 4.8405723873656825e-14,
+    "true_contam_pearson": 0.997310497771497,
+    "true_contam_mae": 0.05875873682738835,
+    "true_contam_bias": -0.05860368796609732,
+    "true_native_relfro": 0.13066921342092924
+   },
+   "scdecontx": {
+    "import_s": 0.3106516250409186,
+    "cold_s": 0.27836833300534636,
+    "warm_s": [
+     0.011419417103752494,
+     0.011083917110227048
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.220503566188911,
+     2.152978191300771
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009071889824053825,
+    "mean_contamination": 0.3418826962336539,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999697579911075,
+    "r_contam_maxdiff": 0.003488677037789767,
+    "r_counts_maxdiff": 0.10689345508557269,
+    "true_contam_pearson": 0.9972727545100923,
+    "true_contam_mae": 0.05813062768303557,
+    "true_contam_bias": -0.05796942602403827,
+    "true_native_relfro": 0.13021336399191494
+   },
+   "scdecontx_shared": {
+    "import_s": 0.3287522089667618,
+    "cold_s": 0.2741287500830367,
+    "warm_s": [
+     0.008062292006798089,
+     0.007664332981221378
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.207883412720612,
+     2.139551824837887
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009136860567423577,
+    "mean_contamination": 0.3412484342915949,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999999999999999,
+    "r_contam_maxdiff": 8.049116928532385e-16,
+    "r_counts_maxdiff": 1.7763568394002505e-14,
+    "true_contam_pearson": 0.9973104977714968,
+    "true_contam_mae": 0.05875873682738834,
+    "true_contam_bias": -0.058603687966097315,
+    "true_native_relfro": 0.13066921342092921
+   }
+  },
+  "sim_high_s2": {
+   "group": "accuracy",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 633213,
+   "n_clusters": 5,
+   "true_mean": 0.40394853850567825,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.47113328407714056,
+   "R": {
+    "total_s": [
+     2.46,
+     2.093
+    ],
+    "umap_s": [
+     2.371,
+     2.002
+    ],
+    "em_s": [
+     0.0890000000000004,
+     0.0910000000000002
+    ],
+    "n_iter": 14,
+    "delta": [
+     4.48271307041325,
+     2.29178297808012
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009019363484291387,
+    "mean_contamination": 0.3431188259083333,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9969503902546983,
+    "true_contam_mae": 0.0609225456139369,
+    "true_contam_bias": -0.06082971259734488,
+    "true_native_relfro": 0.14007957976439916
+   },
+   "niruff": {
+    "import_s": 1.4980322920018807,
+    "cold_s": 0.039865917060524225,
+    "warm_s": [
+     0.03505708393640816,
+     0.03407024999614805
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.414085999089207,
+     2.292815494758812
+    ],
+    "self_consistency": 0.056037385373474025,
+    "mean_contamination": 0.341423841091001,
+    "frac_nonzero_kept": 0.5740295919382578,
+    "r_contam_pearson": 0.9999505636972156,
+    "r_contam_maxdiff": 0.008387040309138519,
+    "r_counts_maxdiff": 0.7837399226126536,
+    "true_contam_pearson": 0.9970919667889373,
+    "true_contam_mae": 0.06258366672433699,
+    "true_contam_bias": -0.06252469741467717,
+    "true_native_relfro": 0.15510726325976273
+   },
+   "niruff_shared": {
+    "import_s": 0.5395272090099752,
+    "cold_s": 0.03888329106848687,
+    "warm_s": [
+     0.03454262495506555,
+     0.03353616700042039
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     4.4203893585412475,
+     2.3001352436942724
+    ],
+    "self_consistency": 0.05620323909556302,
+    "mean_contamination": 0.34182113469999864,
+    "frac_nonzero_kept": 0.5731341586480379,
+    "r_contam_pearson": 0.9999838588357096,
+    "r_contam_maxdiff": 0.006064059103121154,
+    "r_counts_maxdiff": 0.6735162446012692,
+    "true_contam_pearson": 0.9970002535229923,
+    "true_contam_mae": 0.0621925542702244,
+    "true_contam_bias": -0.0621274038056796,
+    "true_native_relfro": 0.15477282744148535
+   },
+   "omicverse": {
+    "import_s": 0.103746333043091,
+    "cold_s": 0.2884332500398159,
+    "warm_s": [
+     0.28022204199805856,
+     0.27899150003213435
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.492432511850049,
+     2.3008425562789734
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009112400134685672,
+    "mean_contamination": 0.34347222302526287,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999373357587215,
+    "r_contam_maxdiff": 0.004721684575096738,
+    "r_counts_maxdiff": 0.1392446992021772,
+    "true_contam_pearson": 0.9968149844217234,
+    "true_contam_mae": 0.060568965673276846,
+    "true_contam_bias": -0.06047631548041535,
+    "true_native_relfro": 0.139820118271715
+   },
+   "omicverse_shared": {
+    "import_s": 0.09877866692841053,
+    "cold_s": 0.28083399997558445,
+    "warm_s": [
+     0.2793241669423878,
+     0.2760661250213161
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     4.482713070413274,
+     2.291782978080128
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009019363484289444,
+    "mean_contamination": 0.3431188259083333,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 1.7520707107365752e-15,
+    "r_counts_maxdiff": 2.531308496145357e-14,
+    "true_contam_pearson": 0.996950390254698,
+    "true_contam_mae": 0.060922545613936945,
+    "true_contam_bias": -0.060829712597344925,
+    "true_native_relfro": 0.14007957976439922
+   },
+   "scdecontx": {
+    "import_s": 0.3238564169732854,
+    "cold_s": 0.3099533749045804,
+    "warm_s": [
+     0.01182229199912399,
+     0.011619166936725378
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.487693774100099,
+     2.2974124279403627
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009133499693213532,
+    "mean_contamination": 0.34340649661151096,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999574405918623,
+    "r_contam_maxdiff": 0.0042375635620561375,
+    "r_counts_maxdiff": 0.10346312068473074,
+    "true_contam_pearson": 0.9969496675671521,
+    "true_contam_mae": 0.06063434311810191,
+    "true_contam_bias": -0.0605420418941673,
+    "true_native_relfro": 0.13986277984717274
+   },
+   "scdecontx_shared": {
+    "import_s": 0.31769204104784876,
+    "cold_s": 0.2776645409176126,
+    "warm_s": [
+     0.00845095794647932,
+     0.008638499886728823
+    ],
+    "theta0_calls": null,
+    "delta": [
+     4.482713070413263,
+     2.2917829780801284
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009019363484291665,
+    "mean_contamination": 0.3431188259083333,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999999999999999,
+    "r_contam_maxdiff": 7.077671781985373e-16,
+    "r_counts_maxdiff": 9.769962616701378e-15,
+    "true_contam_pearson": 0.9969503902546981,
+    "true_contam_mae": 0.060922545613936924,
+    "true_contam_bias": -0.06082971259734491,
+    "true_native_relfro": 0.14007957976439916
+   }
+  },
+  "pbmc3k": {
+   "group": "real",
+   "n_cells": 2700,
+   "n_genes": 13714,
+   "nnz": 2282976,
+   "n_clusters": 8,
+   "R": {
+    "total_s": [
+     6.517,
+     6.004
+    ],
+    "umap_s": [
+     4.455,
+     3.948
+    ],
+    "em_s": [
+     2.062,
+     2.056
+    ],
+    "n_iter": 128,
+    "delta": [
+     10.3467359685936,
+     1.12878561127428
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.001018307025840784,
+    "mean_contamination": 0.0887704108755607,
+    "frac_nonzero_kept": 1.0
+   },
+   "niruff": {
+    "import_s": 1.4724798750830814,
+    "cold_s": 1.292622375069186,
+    "warm_s": [
+     1.2593409169930965,
+     1.2616680420469493
+    ],
+    "theta0_calls": null,
+    "delta": [
+     7.146153425180697,
+     0.5274178911145339
+    ],
+    "self_consistency": 0.08376170528489824,
+    "mean_contamination": 0.0683261432756046,
+    "frac_nonzero_kept": 0.9846551168299623,
+    "r_contam_pearson": 0.9941604536139299,
+    "r_contam_maxdiff": 0.069741807292958,
+    "r_counts_maxdiff": 11.65541271866485
+   },
+   "niruff_shared": {
+    "import_s": 0.555421584052965,
+    "cold_s": 1.246497125015594,
+    "warm_s": [
+     1.311323000001721,
+     1.5654539579991251
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     7.34294457709397,
+     0.5615935380128237
+    ],
+    "self_consistency": 0.08509154673221508,
+    "mean_contamination": 0.07064039818701986,
+    "frac_nonzero_kept": 0.9842017612099295,
+    "r_contam_pearson": 0.9956053565802688,
+    "r_contam_maxdiff": 0.06101462249330915,
+    "r_counts_maxdiff": 11.65541271866485
+   },
+   "omicverse": {
+    "import_s": 0.13362691598013043,
+    "cold_s": 6.805151708074845,
+    "warm_s": [
+     4.743177374941297,
+     5.8464941249694675
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.32321056632058,
+     1.130578385444384
+    ],
+    "n_iter": 127,
+    "self_consistency": 0.001031626390466639,
+    "mean_contamination": 0.08915774268364314,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999643074171306,
+    "r_contam_maxdiff": 0.00452771606751072,
+    "r_counts_maxdiff": 1.3076791856017118
+   },
+   "omicverse_shared": {
+    "import_s": 0.1420777919702232,
+    "cold_s": 5.084301624912769,
+    "warm_s": [
+     4.566531999967992,
+     4.923763124970719
+    ],
+    "theta0_calls": 3,
+    "delta": [
+     10.346735968593487,
+     1.1287856112742678
+    ],
+    "n_iter": 128,
+    "self_consistency": 0.0010183070258409227,
+    "mean_contamination": 0.08877041087556073,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999999999999999,
+    "r_contam_maxdiff": 8.784639682346551e-15,
+    "r_counts_maxdiff": 1.9326762412674725e-12
+   },
+   "scdecontx": {
+    "import_s": 0.3190645830472931,
+    "cold_s": 0.6213454999960959,
+    "warm_s": [
+     0.32846404204610735,
+     0.32987483392935246
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.427185523802319,
+     1.1172846901719324
+    ],
+    "n_iter": 135,
+    "self_consistency": 0.0009564295412183288,
+    "mean_contamination": 0.08726591440792178,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9998842137217673,
+    "r_contam_maxdiff": 0.008919292547476199,
+    "r_counts_maxdiff": 7.72857433306703
+   },
+   "scdecontx_shared": {
+    "import_s": 0.31200941710267216,
+    "cold_s": 0.5828569160075858,
+    "warm_s": [
+     0.29744395799934864,
+     0.29286870802752674
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.346735968594098,
+     1.1287856112743164
+    ],
+    "n_iter": 128,
+    "self_consistency": 0.0010183070258409366,
+    "mean_contamination": 0.08877041087556052,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 1.0,
+    "r_contam_maxdiff": 5.800915303666443e-15,
+    "r_counts_maxdiff": 7.240874566605271e-13
+   }
+  },
+  "speed_5k": {
+   "group": "speed",
+   "n_cells": 5000,
+   "n_genes": 2000,
+   "nnz": 1603734,
+   "n_clusters": 8,
+   "true_mean": 0.08994580618259226,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.1432552866410714,
+   "R": {
+    "total_s": [
+     5.876,
+     5.178,
+     5.17
+    ],
+    "umap_s": [
+     5.66,
+     4.966,
+     4.963
+    ],
+    "em_s": [
+     0.215999999999999,
+     0.212000000000002,
+     0.206999999999999
+    ],
+    "n_iter": 13,
+    "delta": [
+     9.91729129731198,
+     0.974277121868061
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008372409360058175,
+    "mean_contamination": 0.08961497471322412,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9966831970003536,
+    "true_contam_mae": 0.005049080809758449,
+    "true_contam_bias": -0.0003308314693681472,
+    "true_native_relfro": 0.06670572881161023
+   },
+   "niruff": {
+    "import_s": 1.587711791973561,
+    "cold_s": 0.11392816691659391,
+    "warm_s": [
+     0.10135987494140863,
+     0.10109258303418756,
+     0.10018416692037135
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.47080810769829,
+     0.8902632378063896
+    ],
+    "self_consistency": 0.03438721739210815,
+    "mean_contamination": 0.08480437425892985,
+    "frac_nonzero_kept": 0.8509484739988052,
+    "r_contam_pearson": 0.999914063496737,
+    "r_contam_maxdiff": 0.010438167617657071,
+    "r_counts_maxdiff": 1.5605364468193261,
+    "true_contam_pearson": 0.9965944476155975,
+    "true_contam_mae": 0.006664797883755226,
+    "true_contam_bias": -0.0051414319236624114,
+    "true_native_relfro": 0.07572813953060231
+   },
+   "omicverse": {
+    "import_s": 0.10303779097739607,
+    "cold_s": 0.7027139579877257,
+    "warm_s": [
+     0.6827732500387356,
+     0.7727793750818819,
+     0.7359058751026168
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.913244746855117,
+     0.9732554827071918
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0008436506474164968,
+    "mean_contamination": 0.08957648503916016,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999985563923413,
+    "r_contam_maxdiff": 0.0008874194387026458,
+    "r_counts_maxdiff": 0.24255977201576245,
+    "true_contam_pearson": 0.9966807020978645,
+    "true_contam_mae": 0.0050537968753803465,
+    "true_contam_bias": -0.00036932114343210943,
+    "true_native_relfro": 0.0667088372018683
+   },
+   "scdecontx": {
+    "import_s": 0.3466551670571789,
+    "cold_s": 0.3341643330641091,
+    "warm_s": [
+     0.03222258307505399,
+     0.028718832996673882,
+     0.031219041906297207
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.91652240016235,
+     0.9741496839011906
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0008433348697215459,
+    "mean_contamination": 0.08960677387014696,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999998931701187,
+    "r_contam_maxdiff": 0.0008328567062107009,
+    "r_counts_maxdiff": 0.2359182158504662,
+    "true_contam_pearson": 0.9966804149644097,
+    "true_contam_mae": 0.005053282996374866,
+    "true_contam_bias": -0.00033903231244531085,
+    "true_native_relfro": 0.06670625778539022
+   },
+   "scdecontx_1t": {
+    "import_s": 0.33542825002223253,
+    "cold_s": 0.36456841602921486,
+    "warm_s": [
+     0.06812383292708546,
+     0.06937774992547929,
+     0.06701858399901539
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.91652240016235,
+     0.9741496839011906
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0008433348697215459,
+    "mean_contamination": 0.08960677387014696,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999998931701187,
+    "r_contam_maxdiff": 0.0008328567062107009,
+    "r_counts_maxdiff": 0.2359182158504662,
+    "true_contam_pearson": 0.9966804149644097,
+    "true_contam_mae": 0.005053282996374866,
+    "true_contam_bias": -0.00033903231244531085,
+    "true_native_relfro": 0.06670625778539022
+   }
+  },
+  "speed_10k": {
+   "group": "speed",
+   "n_cells": 10000,
+   "n_genes": 2000,
+   "nnz": 3216828,
+   "n_clusters": 8,
+   "true_mean": 0.0900008906820646,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.14516616625251935,
+   "R": {
+    "total_s": [
+     10.477,
+     9.489,
+     9.328
+    ],
+    "umap_s": [
+     10.074,
+     9.092,
+     8.946
+    ],
+    "em_s": [
+     0.403,
+     0.397000000000002,
+     0.381999999999994
+    ],
+    "n_iter": 12,
+    "delta": [
+     10.0925218102074,
+     1.00926109513434
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0007790626705645627,
+    "mean_contamination": 0.09070186052841497,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.996748121604536,
+    "true_contam_mae": 0.0050299969250331205,
+    "true_contam_bias": 0.000700969846350372,
+    "true_native_relfro": 0.06720703987749602
+   },
+   "niruff": {
+    "import_s": 1.6233329169917852,
+    "cold_s": 0.23862870899029076,
+    "warm_s": [
+     0.20109129208140075,
+     0.1882914579473436,
+     0.20062670903280377
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.700072226897118,
+     0.92937912126099
+    ],
+    "self_consistency": 0.03428362015786557,
+    "mean_contamination": 0.08631122639191702,
+    "frac_nonzero_kept": 0.8494722129998868,
+    "r_contam_pearson": 0.9999351231398682,
+    "r_contam_maxdiff": 0.010597418081026946,
+    "r_counts_maxdiff": 1.6152406473798584,
+    "true_contam_pearson": 0.9967196416312184,
+    "true_contam_mae": 0.005780601829818116,
+    "true_contam_bias": -0.003689664290147591,
+    "true_native_relfro": 0.07571962165560944
+   },
+   "omicverse": {
+    "import_s": 0.13136983301956207,
+    "cold_s": 1.3879345420282334,
+    "warm_s": [
+     1.3117734580300748,
+     1.286921542021446,
+     1.5465430000331253
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.088474574134185,
+     1.0081954310527412
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007882489222623378,
+    "mean_contamination": 0.0906643035381989,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999995045727468,
+    "r_contam_maxdiff": 0.0006749049750723914,
+    "r_counts_maxdiff": 0.23014028483592835,
+    "true_contam_pearson": 0.9967482165060608,
+    "true_contam_mae": 0.005025148413385719,
+    "true_contam_bias": 0.0006634128561343011,
+    "true_native_relfro": 0.06720672057235279
+   },
+   "scdecontx": {
+    "import_s": 0.3321335830260068,
+    "cold_s": 0.3444926249794662,
+    "warm_s": [
+     0.058984875096939504,
+     0.04886279196944088,
+     0.05008041695691645
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.090138323851463,
+     1.0086209413621163
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007989941413142354,
+    "mean_contamination": 0.09067929010319213,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999994473605358,
+    "r_contam_maxdiff": 0.0005411836504539067,
+    "r_counts_maxdiff": 0.18424069878333416,
+    "true_contam_pearson": 0.9967464493595514,
+    "true_contam_mae": 0.005028951605010007,
+    "true_contam_bias": 0.0006783994211275107,
+    "true_native_relfro": 0.06720835826416255
+   },
+   "scdecontx_1t": {
+    "import_s": 0.48019174998626113,
+    "cold_s": 0.548128042020835,
+    "warm_s": [
+     0.15479025000240654,
+     0.12899575009942055,
+     0.12322262499947101
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.090138323851463,
+     1.0086209413621163
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007989941413142354,
+    "mean_contamination": 0.09067929010319213,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999994473605358,
+    "r_contam_maxdiff": 0.0005411836504539067,
+    "r_counts_maxdiff": 0.18424069878333416,
+    "true_contam_pearson": 0.9967464493595514,
+    "true_contam_mae": 0.005028951605010007,
+    "true_contam_bias": 0.0006783994211275107,
+    "true_native_relfro": 0.06720835826416255
+   }
+  },
+  "speed_20k": {
+   "group": "speed",
+   "n_cells": 20000,
+   "n_genes": 2000,
+   "nnz": 6509532,
+   "n_clusters": 8,
+   "true_mean": 0.09072910335107282,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.15038724048087165,
+   "R": {
+    "total_s": [
+     13.294,
+     12.12,
+     11.87
+    ],
+    "umap_s": [
+     12.45,
+     11.276,
+     11.042
+    ],
+    "em_s": [
+     0.843999999999998,
+     0.844000000000001,
+     0.828000000000003
+    ],
+    "n_iter": 13,
+    "delta": [
+     10.1269256747134,
+     1.0284163320176
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0007248477433572029,
+    "mean_contamination": 0.09174786706166072,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.99673102008649,
+    "true_contam_mae": 0.0051415973661220055,
+    "true_contam_bias": 0.0010187637105878952,
+    "true_native_relfro": 0.07025047748318795
+   },
+   "niruff": {
+    "import_s": 1.493025374948047,
+    "cold_s": 0.4327887910185382,
+    "warm_s": [
+     0.3923321249894798,
+     0.37803316698409617,
+     0.3777725420659408
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.811289301335323,
+     0.9601921736457435
+    ],
+    "self_consistency": 0.039579083419397754,
+    "mean_contamination": 0.08801775292599016,
+    "frac_nonzero_kept": 0.8490098827381138,
+    "r_contam_pearson": 0.9999560200032097,
+    "r_contam_maxdiff": 0.00909986159429299,
+    "r_counts_maxdiff": 1.7709068244207857,
+    "true_contam_pearson": 0.9967148735988696,
+    "true_contam_mae": 0.005396362654728546,
+    "true_contam_bias": -0.0027113504250826427,
+    "true_native_relfro": 0.07895466161456759
+   },
+   "omicverse": {
+    "import_s": 0.11434424994513392,
+    "cold_s": 2.758270459016785,
+    "warm_s": [
+     2.6911502920556813,
+     2.7149775410071015,
+     2.830962207983248
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.125411450068254,
+     1.0279899319115815
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0007260732967145286,
+    "mean_contamination": 0.09173378037967098,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999998333917435,
+    "r_contam_maxdiff": 0.000374501315569431,
+    "r_counts_maxdiff": 0.19907325768777318,
+    "true_contam_pearson": 0.9967319238525261,
+    "true_contam_mae": 0.00513840240232588,
+    "true_contam_bias": 0.0010046770285981697,
+    "true_native_relfro": 0.07024928788642407
+   },
+   "scdecontx": {
+    "import_s": 0.3250499590067193,
+    "cold_s": 0.43578791699837893,
+    "warm_s": [
+     0.11734254204202443,
+     0.10450595803558826,
+     0.10996916599106044
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.125633523859403,
+     1.02806528724149
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0006940023785126925,
+    "mean_contamination": 0.09173592860113981,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999998531140065,
+    "r_contam_maxdiff": 0.00045451669141025053,
+    "r_counts_maxdiff": 0.2216083976345048,
+    "true_contam_pearson": 0.9967316010806353,
+    "true_contam_mae": 0.005139146352230881,
+    "true_contam_bias": 0.0010068252500669904,
+    "true_native_relfro": 0.07024958063069865
+   },
+   "scdecontx_1t": {
+    "import_s": 0.46190537500660866,
+    "cold_s": 0.7298934999853373,
+    "warm_s": [
+     0.2981580829946324,
+     0.2663884590147063,
+     0.26016954192891717
+    ],
+    "theta0_calls": null,
+    "delta": [
+     10.125633523859403,
+     1.02806528724149
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0006940023785126925,
+    "mean_contamination": 0.09173592860113981,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999998531140065,
+    "r_contam_maxdiff": 0.00045451669141025053,
+    "r_counts_maxdiff": 0.2216083976345048,
+    "true_contam_pearson": 0.9967316010806353,
+    "true_contam_mae": 0.005139146352230881,
+    "true_contam_bias": 0.0010068252500669904,
+    "true_native_relfro": 0.07024958063069865
+   }
+  },
+  "sweep_d1_10_s11": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 466671,
+   "n_clusters": 5,
+   "true_mean": 0.08760540212293469,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.12460340897310104,
+   "R": {
+    "total_s": 2.521,
+    "umap_s": 2.459,
+    "em_s": 0.0619999999999998,
+    "n_iter": 12,
+    "delta": [
+     10.5810544546617,
+     1.02171313058157
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0007302281227687633,
+    "mean_contamination": 0.0875812821347067,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9967654857143237,
+    "true_contam_mae": 0.004818048627786288,
+    "true_contam_bias": -2.411998822799753e-05,
+    "true_native_relfro": 0.05078159481598874
+   },
+   "niruff": {
+    "import_s": 1.5781857910333201,
+    "cold_s": 0.036469541024416685,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     10.137500836041903,
+     0.9329672004973428
+    ],
+    "self_consistency": 0.021533839855759407,
+    "mean_contamination": 0.08315368567797582,
+    "frac_nonzero_kept": 0.8188552534869319,
+    "r_contam_pearson": 0.9999290207929278,
+    "r_contam_maxdiff": 0.009069833491521406,
+    "r_counts_maxdiff": 1.4460529533290676,
+    "true_contam_pearson": 0.9966921280055104,
+    "true_contam_mae": 0.00604292882049316,
+    "true_contam_bias": -0.004451716444958891,
+    "true_native_relfro": 0.057373190803987215
+   },
+   "omicverse": {
+    "import_s": 0.10880899999756366,
+    "cold_s": 0.24556549999397248,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     10.586070601785766,
+     1.0231085317730209
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007553901745109837,
+    "mean_contamination": 0.08762187814034328,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999988968194602,
+    "r_contam_maxdiff": 0.0007032045325272226,
+    "r_counts_maxdiff": 0.2143054801258443,
+    "true_contam_pearson": 0.9967752067187478,
+    "true_contam_mae": 0.004809454033747309,
+    "true_contam_bias": 1.6476017408584092e-05,
+    "true_native_relfro": 0.05077849410532059
+   },
+   "scdecontx": {
+    "import_s": 0.4495985000394285,
+    "cold_s": 0.3286731250118464,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     10.587864640391144,
+     1.02342806954705
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007753392390162928,
+    "mean_contamination": 0.08763032376376097,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999986738465064,
+    "r_contam_maxdiff": 0.000720106407559179,
+    "r_counts_maxdiff": 0.3310284845511471,
+    "true_contam_pearson": 0.996769447333945,
+    "true_contam_mae": 0.0048154620911494295,
+    "true_contam_bias": 2.4921640826253943e-05,
+    "true_native_relfro": 0.05077964157320143
+   }
+  },
+  "sweep_d1_10_s12": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 444229,
+   "n_clusters": 5,
+   "true_mean": 0.0914181415415619,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.12121460646612443,
+   "R": {
+    "total_s": 2.344,
+    "umap_s": 2.286,
+    "em_s": 0.0580000000000003,
+    "n_iter": 11,
+    "delta": [
+     9.88214041957849,
+     0.999846298841716
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.000736118017704606,
+    "mean_contamination": 0.0916336799963295,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9974452151224236,
+    "true_contam_mae": 0.004511735801473113,
+    "true_contam_bias": 0.00021553845476761073,
+    "true_native_relfro": 0.04598806666589672
+   },
+   "niruff": {
+    "import_s": 1.4782496249536052,
+    "cold_s": 0.03419108304660767,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     9.458514424657418,
+     0.9142557146256561
+    ],
+    "self_consistency": 0.022164596871674713,
+    "mean_contamination": 0.08702175060841501,
+    "frac_nonzero_kept": 0.8036395642787841,
+    "r_contam_pearson": 0.9999238409354018,
+    "r_contam_maxdiff": 0.010734468869945885,
+    "r_counts_maxdiff": 1.2609601307060836,
+    "true_contam_pearson": 0.997384939288659,
+    "true_contam_mae": 0.005752467661863645,
+    "true_contam_bias": -0.0043963909331469035,
+    "true_native_relfro": 0.051954216051564604
+   },
+   "omicverse": {
+    "import_s": 0.1082680830731988,
+    "cold_s": 0.22434916603378952,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     9.879229775299798,
+     0.9990991239320047
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0007454154275070256,
+    "mean_contamination": 0.09160939037608433,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999993989926477,
+    "r_contam_maxdiff": 0.0005954855196308104,
+    "r_counts_maxdiff": 0.32151044580599464,
+    "true_contam_pearson": 0.9974462649569237,
+    "true_contam_mae": 0.004507876925992517,
+    "true_contam_bias": 0.000191248834522445,
+    "true_native_relfro": 0.04598696827317887
+   },
+   "scdecontx": {
+    "import_s": 0.30957954190671444,
+    "cold_s": 0.29153924994170666,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     9.879461633627075,
+     0.9990996002794469
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0007626356912945331,
+    "mean_contamination": 0.09160930147489603,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999990789313153,
+    "r_contam_maxdiff": 0.0005605428750577093,
+    "r_counts_maxdiff": 0.15795738001457144,
+    "true_contam_pearson": 0.9974453948168678,
+    "true_contam_mae": 0.00450929795819479,
+    "true_contam_bias": 0.00019115993333413973,
+    "true_native_relfro": 0.04598771981731791
+   }
+  },
+  "sweep_d1_10_s13": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 439492,
+   "n_clusters": 5,
+   "true_mean": 0.08953857414017563,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.12166699955944663,
+   "R": {
+    "total_s": 2.453,
+    "umap_s": 2.392,
+    "em_s": 0.0609999999999999,
+    "n_iter": 12,
+    "delta": [
+     10.191448841858,
+     1.01619452218404
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0007042149098343432,
+    "mean_contamination": 0.0898231501808042,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.997044474146725,
+    "true_contam_mae": 0.004731037456785138,
+    "true_contam_bias": 0.00028457604062854706,
+    "true_native_relfro": 0.04798989738398064
+   },
+   "niruff": {
+    "import_s": 1.6045612499583513,
+    "cold_s": 0.03027545800432563,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     9.774642154288609,
+     0.9258078978270415
+    ],
+    "self_consistency": 0.020467531819513773,
+    "mean_contamination": 0.08540169693502855,
+    "frac_nonzero_kept": 0.8084242716590974,
+    "r_contam_pearson": 0.9999342538157383,
+    "r_contam_maxdiff": 0.010226705689035054,
+    "r_counts_maxdiff": 0.9814602985749702,
+    "true_contam_pearson": 0.996990701116135,
+    "true_contam_mae": 0.005823657536812226,
+    "true_contam_bias": -0.004136877205147067,
+    "true_native_relfro": 0.05410556776319317
+   },
+   "omicverse": {
+    "import_s": 0.10775058402214199,
+    "cold_s": 0.2283793749520555,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     10.196114266210035,
+     1.0174290943028395
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007091293852968909,
+    "mean_contamination": 0.08987234189012654,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999986587361881,
+    "r_contam_maxdiff": 0.0006484583917758385,
+    "r_counts_maxdiff": 0.1433340603570905,
+    "true_contam_pearson": 0.9970461749223009,
+    "true_contam_mae": 0.004730172051133197,
+    "true_contam_bias": 0.00033376774995089284,
+    "true_native_relfro": 0.04798957383250214
+   },
+   "scdecontx": {
+    "import_s": 0.3335754170548171,
+    "cold_s": 0.2826510830782354,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     10.193831275339084,
+     1.0167772719056924
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0007426828875984892,
+    "mean_contamination": 0.08984633810313457,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999993942245431,
+    "r_contam_maxdiff": 0.0006113183373455365,
+    "r_counts_maxdiff": 0.16652369457930044,
+    "true_contam_pearson": 0.9970484411383042,
+    "true_contam_mae": 0.004728538403230754,
+    "true_contam_bias": 0.0003077639629589225,
+    "true_native_relfro": 0.04798954368289391
+   }
+  },
+  "sweep_d2_8_s11": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 543651,
+   "n_clusters": 5,
+   "true_mean": 0.20163160387396661,
+   "delta": [
+    2,
+    8
+   ],
+   "observed_vs_native_relfro": 0.23316333797131178,
+   "R": {
+    "total_s": 2.506,
+    "umap_s": 2.44,
+    "em_s": 0.0659999999999998,
+    "n_iter": 10,
+    "delta": [
+     7.92434239726464,
+     1.83986579652603
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0006814746869246505,
+    "mean_contamination": 0.19158541586653433,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9974988605272433,
+    "true_contam_mae": 0.011180268886688967,
+    "true_contam_bias": -0.010046188007432264,
+    "true_native_relfro": 0.07887787005551081
+   },
+   "niruff": {
+    "import_s": 1.475384333054535,
+    "cold_s": 0.022863874910399318,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.811449270737052,
+     1.8301312122687285
+    ],
+    "self_consistency": 0.018730987015977196,
+    "mean_contamination": 0.18896541430702712,
+    "frac_nonzero_kept": 0.6680958924015591,
+    "r_contam_pearson": 0.9999855148593441,
+    "r_contam_maxdiff": 0.008072875019509596,
+    "r_counts_maxdiff": 0.7901028385649369,
+    "true_contam_pearson": 0.9975049452654698,
+    "true_contam_mae": 0.01323803202096229,
+    "true_contam_bias": -0.012666189566939481,
+    "true_native_relfro": 0.08819617796493301
+   },
+   "omicverse": {
+    "import_s": 0.09852512506768107,
+    "cold_s": 0.1978590419748798,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.935029927044684,
+     1.8455735579473733
+    ],
+    "n_iter": 10,
+    "self_consistency": 0.0007174783016355227,
+    "mean_contamination": 0.1918158849579995,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999911086587031,
+    "r_contam_maxdiff": 0.0020823185563678195,
+    "r_counts_maxdiff": 0.202764728424966,
+    "true_contam_pearson": 0.9975234776954219,
+    "true_contam_mae": 0.010988477078282667,
+    "true_contam_bias": -0.009815718915967093,
+    "true_native_relfro": 0.07882250536298044
+   },
+   "scdecontx": {
+    "import_s": 0.31807229202240705,
+    "cold_s": 0.2833393750479445,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.927700438499371,
+     1.8422165505235393
+    ],
+    "n_iter": 10,
+    "self_consistency": 0.0007354351541283277,
+    "mean_contamination": 0.19169249261748325,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999821981922743,
+    "r_contam_maxdiff": 0.002148118530740123,
+    "r_counts_maxdiff": 0.20744633535906065,
+    "true_contam_pearson": 0.9975002849102648,
+    "true_contam_mae": 0.011090772157403356,
+    "true_contam_bias": -0.009939111256483368,
+    "true_native_relfro": 0.07885559975860024
+   }
+  },
+  "sweep_d2_8_s12": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 516590,
+   "n_clusters": 5,
+   "true_mean": 0.19842623154362674,
+   "delta": [
+    2,
+    8
+   ],
+   "observed_vs_native_relfro": 0.21887747107107286,
+   "R": {
+    "total_s": 2.411,
+    "umap_s": 2.349,
+    "em_s": 0.0619999999999989,
+    "n_iter": 10,
+    "delta": [
+     7.66332947002259,
+     1.75166190728443
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0006600722003758663,
+    "mean_contamination": 0.1875791737048707,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9975468651442783,
+    "true_contam_mae": 0.011712557556561237,
+    "true_contam_bias": -0.010847057838756016,
+    "true_native_relfro": 0.06917329309671837
+   },
+   "niruff": {
+    "import_s": 1.5554529170040041,
+    "cold_s": 0.02436795807443559,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.551542267986347,
+     1.7218066066168567
+    ],
+    "self_consistency": 0.01634075293568049,
+    "mean_contamination": 0.18481746005164892,
+    "frac_nonzero_kept": 0.6631680830058654,
+    "r_contam_pearson": 0.9999770296117778,
+    "r_contam_maxdiff": 0.008810463433702398,
+    "r_counts_maxdiff": 0.7498936319761298,
+    "true_contam_pearson": 0.9974792923945791,
+    "true_contam_mae": 0.01402677935094448,
+    "true_contam_bias": -0.0136087714919778,
+    "true_native_relfro": 0.07713737546907154
+   },
+   "omicverse": {
+    "import_s": 0.09953750006388873,
+    "cold_s": 0.1959801249904558,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.671107780938393,
+     1.7543076776022788
+    ],
+    "n_iter": 10,
+    "self_consistency": 0.0006808685334928379,
+    "mean_contamination": 0.18763408604957488,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999961614117151,
+    "r_contam_maxdiff": 0.00223242858520728,
+    "r_counts_maxdiff": 0.15692911082140804,
+    "true_contam_pearson": 0.9975071331001105,
+    "true_contam_mae": 0.011670723583342453,
+    "true_contam_bias": -0.010792145494051844,
+    "true_native_relfro": 0.06916602664014002
+   },
+   "scdecontx": {
+    "import_s": 0.3242140000220388,
+    "cold_s": 0.30881270801182836,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.671403948624029,
+     1.754895645902761
+    ],
+    "n_iter": 10,
+    "self_consistency": 0.0007165553735216657,
+    "mean_contamination": 0.1876556603934302,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999766716891189,
+    "r_contam_maxdiff": 0.001788689885766609,
+    "r_counts_maxdiff": 0.12837894374666506,
+    "true_contam_pearson": 0.9974709588453066,
+    "true_contam_mae": 0.011680204232201185,
+    "true_contam_bias": -0.010770571150196542,
+    "true_native_relfro": 0.06917073177109848
+   }
+  },
+  "sweep_d2_8_s13": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 513261,
+   "n_clusters": 5,
+   "true_mean": 0.19723309051087703,
+   "delta": [
+    2,
+    8
+   ],
+   "observed_vs_native_relfro": 0.22388261233369972,
+   "R": {
+    "total_s": 2.491,
+    "umap_s": 2.425,
+    "em_s": 0.0659999999999998,
+    "n_iter": 10,
+    "delta": [
+     7.76572795452112,
+     1.77412632034395
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0006324968394031127,
+    "mean_contamination": 0.18758303528214873,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.997577618916789,
+    "true_contam_mae": 0.010705436693202714,
+    "true_contam_bias": -0.009650055228728291,
+    "true_native_relfro": 0.07356845940726449
+   },
+   "niruff": {
+    "import_s": 1.5098429169738665,
+    "cold_s": 0.023690416011959314,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.646457903903479,
+     1.7433408803139026
+    ],
+    "self_consistency": 0.01850384897686963,
+    "mean_contamination": 0.18480641418266344,
+    "frac_nonzero_kept": 0.6699281652024993,
+    "r_contam_pearson": 0.9999815765704307,
+    "r_contam_maxdiff": 0.007055423445611941,
+    "r_counts_maxdiff": 0.7353560222695503,
+    "true_contam_pearson": 0.9975783762415664,
+    "true_contam_mae": 0.012892565480190289,
+    "true_contam_bias": -0.012426676328213563,
+    "true_native_relfro": 0.0818959351291454
+   },
+   "omicverse": {
+    "import_s": 0.09663483302574605,
+    "cold_s": 0.20467158302199095,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.771983387755726,
+     1.7781539806609226
+    ],
+    "n_iter": 10,
+    "self_consistency": 0.0006552195851204264,
+    "mean_contamination": 0.18775194363212708,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999977106807031,
+    "r_contam_maxdiff": 0.0020306905393250446,
+    "r_counts_maxdiff": 0.1691978620855969,
+    "true_contam_pearson": 0.9975976162486831,
+    "true_contam_mae": 0.010559930769241908,
+    "true_contam_bias": -0.009481146878749944,
+    "true_native_relfro": 0.07352996343519816
+   },
+   "scdecontx": {
+    "import_s": 0.4356409169267863,
+    "cold_s": 0.31840300001204014,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.774256722253991,
+     1.778264123282816
+    ],
+    "n_iter": 10,
+    "self_consistency": 0.0006099060944839696,
+    "mean_contamination": 0.18775399289782005,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999935843189887,
+    "r_contam_maxdiff": 0.0012804627683482978,
+    "r_counts_maxdiff": 0.23103621067276525,
+    "true_contam_pearson": 0.9975508293429964,
+    "true_contam_mae": 0.01058689328947849,
+    "true_contam_bias": -0.009479097613056996,
+    "true_native_relfro": 0.07353782785541248
+   }
+  },
+  "sweep_d3_7_s11": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 600463,
+   "n_clusters": 5,
+   "true_mean": 0.30195572286908834,
+   "delta": [
+    3,
+    7
+   ],
+   "observed_vs_native_relfro": 0.34412266558630983,
+   "R": {
+    "total_s": 2.636,
+    "umap_s": 2.556,
+    "em_s": 0.0800000000000001,
+    "n_iter": 11,
+    "delta": [
+     6.22359416443366,
+     2.25167177903464
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0006377522630125303,
+    "mean_contamination": 0.26959921217640226,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9973839122412841,
+    "true_contam_mae": 0.03248723492403465,
+    "true_contam_bias": -0.03235651069268603,
+    "true_native_relfro": 0.10735222538150274
+   },
+   "niruff": {
+    "import_s": 1.5973667500074953,
+    "cold_s": 0.038792042061686516,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.120639473741079,
+     2.2356044194352513
+    ],
+    "self_consistency": 0.031038463521067317,
+    "mean_contamination": 0.26689711561561336,
+    "frac_nonzero_kept": 0.5997155528317315,
+    "r_contam_pearson": 0.9999178456409169,
+    "r_contam_maxdiff": 0.008409411804681258,
+    "r_counts_maxdiff": 0.693785002035539,
+    "true_contam_pearson": 0.9973131873373017,
+    "true_contam_mae": 0.0351277409042433,
+    "true_contam_bias": -0.03505860725347495,
+    "true_native_relfro": 0.11935967746937824
+   },
+   "omicverse": {
+    "import_s": 0.10100512497592717,
+    "cold_s": 0.2332556250039488,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.240335631036458,
+     2.2646363003322154
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0005431205688167552,
+    "mean_contamination": 0.2701187763403893,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999421579965778,
+    "r_contam_maxdiff": 0.0032534400612260067,
+    "r_counts_maxdiff": 0.13639826765164176,
+    "true_contam_pearson": 0.9973632600247151,
+    "true_contam_mae": 0.03197145811386462,
+    "true_contam_bias": -0.03183694652869907,
+    "true_native_relfro": 0.10712362953203286
+   },
+   "scdecontx": {
+    "import_s": 0.3297040000325069,
+    "cold_s": 0.2958908329019323,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.2367968757128684,
+     2.261527363777627
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0006458873624476391,
+    "mean_contamination": 0.2699840824015265,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999555360708623,
+    "r_contam_maxdiff": 0.003285030404740763,
+    "r_counts_maxdiff": 0.15147010530904262,
+    "true_contam_pearson": 0.9973778644259395,
+    "true_contam_mae": 0.03210425397337444,
+    "true_contam_bias": -0.031971640467561804,
+    "true_native_relfro": 0.10718362950210107
+   }
+  },
+  "sweep_d3_7_s12": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 572623,
+   "n_clusters": 5,
+   "true_mean": 0.2966584596117055,
+   "delta": [
+    3,
+    7
+   ],
+   "observed_vs_native_relfro": 0.3231871515960892,
+   "R": {
+    "total_s": 2.787,
+    "umap_s": 2.706,
+    "em_s": 0.081,
+    "n_iter": 11,
+    "delta": [
+     6.33066142747295,
+     2.24219277385996
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0005524896382312905,
+    "mean_contamination": 0.2648617930607287,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9974962271478193,
+    "true_contam_mae": 0.03186013678064538,
+    "true_contam_bias": -0.031796666550976765,
+    "true_native_relfro": 0.09577686909997704
+   },
+   "niruff": {
+    "import_s": 1.5207209170330316,
+    "cold_s": 0.034740625065751374,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.221440185693858,
+     2.216198169394731
+    ],
+    "self_consistency": 0.028818492096203685,
+    "mean_contamination": 0.26200473643132144,
+    "frac_nonzero_kept": 0.5968307245779509,
+    "r_contam_pearson": 0.9999590975279236,
+    "r_contam_maxdiff": 0.007728952134245081,
+    "r_counts_maxdiff": 0.9137916730020561,
+    "true_contam_pearson": 0.9973656508227186,
+    "true_contam_mae": 0.0346699822885242,
+    "true_contam_bias": -0.03465372318038402,
+    "true_native_relfro": 0.10627990958432819
+   },
+   "omicverse": {
+    "import_s": 0.10865612502675503,
+    "cold_s": 0.24830383306834847,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.342921384122909,
+     2.252647252291616
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0005350612083035756,
+    "mean_contamination": 0.26538144521793494,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999883365895672,
+    "r_contam_maxdiff": 0.0024741593072245827,
+    "r_counts_maxdiff": 0.18394787293465814,
+    "true_contam_pearson": 0.9974710943410819,
+    "true_contam_mae": 0.03134492128100286,
+    "true_contam_bias": -0.03127701439377054,
+    "true_native_relfro": 0.09555911359448503
+   },
+   "scdecontx": {
+    "import_s": 0.32638862496241927,
+    "cold_s": 0.28033583296928555,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.334653381417639,
+     2.245886602833999
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.0005938392696981376,
+    "mean_contamination": 0.26514723942567786,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999551794529087,
+    "r_contam_maxdiff": 0.0030694357753384416,
+    "r_counts_maxdiff": 0.17425388763718236,
+    "true_contam_pearson": 0.9976294193110747,
+    "true_contam_mae": 0.03158035097156705,
+    "true_contam_bias": -0.03151122018602756,
+    "true_native_relfro": 0.0956410574138799
+   }
+  },
+  "sweep_d3_7_s13": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 568178,
+   "n_clusters": 5,
+   "true_mean": 0.298517500915532,
+   "delta": [
+    3,
+    7
+   ],
+   "observed_vs_native_relfro": 0.3336980894545587,
+   "R": {
+    "total_s": 2.872,
+    "umap_s": 2.792,
+    "em_s": 0.0799999999999996,
+    "n_iter": 11,
+    "delta": [
+     6.15059366190787,
+     2.20928655172828
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.000598520291970335,
+    "mean_contamination": 0.26772702557152206,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9974781824552582,
+    "true_contam_mae": 0.030976132310880835,
+    "true_contam_bias": -0.03079047534400987,
+    "true_native_relfro": 0.10140562429140178
+   },
+   "niruff": {
+    "import_s": 1.4660647499840707,
+    "cold_s": 0.037779875099658966,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.044860631945081,
+     2.1848620708923683
+    ],
+    "self_consistency": 0.026128576647826196,
+    "mean_contamination": 0.26484119209379076,
+    "frac_nonzero_kept": 0.6022813273305196,
+    "r_contam_pearson": 0.9999646320196426,
+    "r_contam_maxdiff": 0.007781812167121656,
+    "r_counts_maxdiff": 0.7522936174455737,
+    "true_contam_pearson": 0.9975026147844634,
+    "true_contam_mae": 0.033783481834261414,
+    "true_contam_bias": -0.033676308821741156,
+    "true_native_relfro": 0.11223218315238041
+   },
+   "omicverse": {
+    "import_s": 0.09878912498243153,
+    "cold_s": 0.24605370906647295,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.162828611145758,
+     2.219138778869164
+    ],
+    "n_iter": 12,
+    "self_consistency": 0.000585688850182009,
+    "mean_contamination": 0.2682090292925451,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999944254473301,
+    "r_contam_maxdiff": 0.001800228226008574,
+    "r_counts_maxdiff": 0.22231863321439532,
+    "true_contam_pearson": 0.9974802779926272,
+    "true_contam_mae": 0.030503077361581796,
+    "true_contam_bias": -0.03030847162298685,
+    "true_native_relfro": 0.1012057210061591
+   },
+   "scdecontx": {
+    "import_s": 0.36502825003117323,
+    "cold_s": 0.28730754100251943,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.160995079394437,
+     2.217438120325579
+    ],
+    "n_iter": 11,
+    "self_consistency": 0.0006549776607618352,
+    "mean_contamination": 0.2680676702007802,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999745371404429,
+    "r_contam_maxdiff": 0.00315061766162103,
+    "r_counts_maxdiff": 0.1207037870125518,
+    "true_contam_pearson": 0.99750109207806,
+    "true_contam_mae": 0.03063822483529147,
+    "true_contam_bias": -0.030449830714751772,
+    "true_native_relfro": 0.1012461202622291
+   }
+  },
+  "sweep_d4_6_s11": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 643981,
+   "n_clusters": 5,
+   "true_mean": 0.40065526995473205,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.4801355761746498,
+   "R": {
+    "total_s": 3.047,
+    "umap_s": 2.947,
+    "em_s": 0.0999999999999996,
+    "n_iter": 14,
+    "delta": [
+     4.81200981881064,
+     2.43625020532751
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008913507964005973,
+    "mean_contamination": 0.34133299118884214,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9968774281206361,
+    "true_contam_mae": 0.05938617189170766,
+    "true_contam_bias": -0.059322278765889934,
+    "true_native_relfro": 0.14761475611545236
+   },
+   "niruff": {
+    "import_s": 1.4456418749177828,
+    "cold_s": 0.04069816705305129,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.730696556563236,
+     2.435449566944451
+    ],
+    "self_consistency": 0.04798307278062719,
+    "mean_contamination": 0.33941333755129294,
+    "frac_nonzero_kept": 0.5731256046374039,
+    "r_contam_pearson": 0.9998342899393292,
+    "r_contam_maxdiff": 0.009858261081669532,
+    "r_counts_maxdiff": 0.7526189047944851,
+    "true_contam_pearson": 0.9968238506411579,
+    "true_contam_mae": 0.061271203543202944,
+    "true_contam_bias": -0.061241932403439045,
+    "true_native_relfro": 0.16341894838487991
+   },
+   "omicverse": {
+    "import_s": 0.10413204203359783,
+    "cold_s": 0.3659694578964263,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.826840640614018,
+     2.4530835396527015
+    ],
+    "n_iter": 15,
+    "self_consistency": 0.0009045768632583578,
+    "mean_contamination": 0.3421729542892954,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999488261856831,
+    "r_contam_maxdiff": 0.004182735750414529,
+    "r_counts_maxdiff": 0.10280825167640284,
+    "true_contam_pearson": 0.9969395207549036,
+    "true_contam_mae": 0.05855017933758944,
+    "true_contam_bias": -0.05848231566543664,
+    "true_native_relfro": 0.14702316542543648
+   },
+   "scdecontx": {
+    "import_s": 0.3208584589883685,
+    "cold_s": 0.2827819579979405,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.8233676171738935,
+     2.448553764822859
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009536401097965941,
+    "mean_contamination": 0.3418870897255515,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9998819890044487,
+    "r_contam_maxdiff": 0.006115726972158578,
+    "r_counts_maxdiff": 0.14372556857642227,
+    "true_contam_pearson": 0.9969247624374454,
+    "true_contam_mae": 0.05883948086855402,
+    "true_contam_bias": -0.05876818022918054,
+    "true_native_relfro": 0.14721261143850953
+   }
+  },
+  "sweep_d4_6_s12": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 617338,
+   "n_clusters": 5,
+   "true_mean": 0.3988327367649834,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.45252887699438604,
+   "R": {
+    "total_s": 2.94,
+    "umap_s": 2.842,
+    "em_s": 0.0979999999999994,
+    "n_iter": 15,
+    "delta": [
+     4.71255448377914,
+     2.37577087055059
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008912030180258795,
+    "mean_contamination": 0.3395882674817252,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9972720450816194,
+    "true_contam_mae": 0.059277022626515574,
+    "true_contam_bias": -0.05924446928325817,
+    "true_native_relfro": 0.13133344986894485
+   },
+   "niruff": {
+    "import_s": 1.6920917079551145,
+    "cold_s": 0.03901729197241366,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.621292212644251,
+     2.3510189105969674
+    ],
+    "self_consistency": 0.05698907872907388,
+    "mean_contamination": 0.33674404200625013,
+    "frac_nonzero_kept": 0.5759648685161127,
+    "r_contam_pearson": 0.9999472374419264,
+    "r_contam_maxdiff": 0.00788115618228119,
+    "r_counts_maxdiff": 0.6804111562435313,
+    "true_contam_pearson": 0.9971942689761477,
+    "true_contam_mae": 0.062100974692172003,
+    "true_contam_bias": -0.06208869475873324,
+    "true_native_relfro": 0.1456757412983009
+   },
+   "omicverse": {
+    "import_s": 0.0987220830284059,
+    "cold_s": 0.3342166249640286,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.707225689447827,
+     2.3704041728543706
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0008480167042945741,
+    "mean_contamination": 0.3392629503003824,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999539297734981,
+    "r_contam_maxdiff": 0.003499559042106637,
+    "r_counts_maxdiff": 0.13570165301297765,
+    "true_contam_pearson": 0.9971154042760819,
+    "true_contam_mae": 0.0596040844244629,
+    "true_contam_bias": -0.05956978646460104,
+    "true_native_relfro": 0.13157593132020418
+   },
+   "scdecontx": {
+    "import_s": 0.35198262508492917,
+    "cold_s": 0.331364959012717,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.700207544735639,
+     2.3634042284032644
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0009197855546867473,
+    "mean_contamination": 0.3389678729742592,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9998681491854566,
+    "r_contam_maxdiff": 0.006527757076058072,
+    "r_counts_maxdiff": 0.21926719523673155,
+    "true_contam_pearson": 0.997006221027778,
+    "true_contam_mae": 0.05990035288435685,
+    "true_contam_bias": -0.05986486379072422,
+    "true_native_relfro": 0.13181549552697305
+   }
+  },
+  "sweep_d4_6_s13": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 611882,
+   "n_clusters": 5,
+   "true_mean": 0.3965025181615853,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.46583597014825545,
+   "R": {
+    "total_s": 2.722,
+    "umap_s": 2.627,
+    "em_s": 0.0949999999999998,
+    "n_iter": 15,
+    "delta": [
+     4.71488171837846,
+     2.36492715963067
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009376442601935209,
+    "mean_contamination": 0.3390001401102933,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9968701472620606,
+    "true_contam_mae": 0.05759058611530146,
+    "true_contam_bias": -0.05750237805129207,
+    "true_native_relfro": 0.1386604952064957
+   },
+   "niruff": {
+    "import_s": 1.8930565409827977,
+    "cold_s": 0.043801625026389956,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.627826804287864,
+     2.350623219592634
+    ],
+    "self_consistency": 0.052671142597022325,
+    "mean_contamination": 0.3363961087678523,
+    "frac_nonzero_kept": 0.5775786834716498,
+    "r_contam_pearson": 0.9998897849331742,
+    "r_contam_maxdiff": 0.008785272211009117,
+    "r_counts_maxdiff": 0.7308601006911775,
+    "true_contam_pearson": 0.9966641806930121,
+    "true_contam_mae": 0.060155577140095645,
+    "true_contam_bias": -0.06010640939373302,
+    "true_native_relfro": 0.15339714475040486
+   },
+   "omicverse": {
+    "import_s": 0.12832170899491757,
+    "cold_s": 0.2923224999103695,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.717635136067263,
+     2.365289296344335
+    ],
+    "n_iter": 13,
+    "self_consistency": 0.0009371935626778238,
+    "mean_contamination": 0.33876822305856663,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999762619730733,
+    "r_contam_maxdiff": 0.003318418765482358,
+    "r_counts_maxdiff": 0.13286863666089727,
+    "true_contam_pearson": 0.9967580772908042,
+    "true_contam_mae": 0.05782273240665613,
+    "true_contam_bias": -0.057734295103018696,
+    "true_native_relfro": 0.1387880538765481
+   },
+   "scdecontx": {
+    "import_s": 0.4832721250131726,
+    "cold_s": 0.3093752090353519,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.717745815925659,
+     2.367643541153454
+    ],
+    "n_iter": 14,
+    "self_consistency": 0.0008399551506940162,
+    "mean_contamination": 0.33900623829257015,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9998673931186783,
+    "r_contam_maxdiff": 0.006037870303345821,
+    "r_counts_maxdiff": 0.16155681522110843,
+    "true_contam_pearson": 0.9967047205215738,
+    "true_contam_mae": 0.05758117171043362,
+    "true_contam_bias": -0.05749627986901509,
+    "true_native_relfro": 0.13864348928003414
+   }
+  },
+  "sweep_d5_5_s11": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 681670,
+   "n_clusters": 5,
+   "true_mean": 0.5011803680800274,
+   "delta": [
+    5,
+    5
+   ],
+   "observed_vs_native_relfro": 0.6570831294908573,
+   "R": {
+    "total_s": 2.772,
+    "umap_s": 2.581,
+    "em_s": 0.191000000000001,
+    "n_iter": 37,
+    "delta": [
+     3.54533918960154,
+     2.53760686844685
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009744459772090402,
+    "mean_contamination": 0.4231695820188157,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9959785730253199,
+    "true_contam_mae": 0.07837512233123083,
+    "true_contam_bias": -0.0780107860612116,
+    "true_native_relfro": 0.19780299307628765
+   },
+   "niruff": {
+    "import_s": 2.3558433749713004,
+    "cold_s": 0.06218829203862697,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.3642050062066944,
+     2.3822438438982148
+    ],
+    "self_consistency": 0.0768623615157521,
+    "mean_contamination": 0.41431582231139813,
+    "frac_nonzero_kept": 0.5598603429812079,
+    "r_contam_pearson": 0.9999404669203219,
+    "r_contam_maxdiff": 0.020980796650103384,
+    "r_counts_maxdiff": 0.9251847573896734,
+    "true_contam_pearson": 0.9956672573525298,
+    "true_contam_mae": 0.08720146714721144,
+    "true_contam_bias": -0.08686454576862929,
+    "true_native_relfro": 0.22662489599177543
+   },
+   "omicverse": {
+    "import_s": 0.11890012491494417,
+    "cold_s": 0.7301757499808446,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.545278436202423,
+     2.537352701216605
+    ],
+    "n_iter": 36,
+    "self_consistency": 0.0009721355142812277,
+    "mean_contamination": 0.4231443077564096,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999748918944168,
+    "r_contam_maxdiff": 0.0036534500462002545,
+    "r_counts_maxdiff": 0.08375901032323796,
+    "true_contam_pearson": 0.9960022419614777,
+    "true_contam_mae": 0.07839821498170607,
+    "true_contam_bias": -0.07803606032361773,
+    "true_native_relfro": 0.19781399800039826
+   },
+   "scdecontx": {
+    "import_s": 0.3913344170432538,
+    "cold_s": 0.3890728750266135,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.518770391329355,
+     2.499431632493475
+    ],
+    "n_iter": 32,
+    "self_consistency": 0.0009859887838606918,
+    "mean_contamination": 0.4215205432159822,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999949376990316,
+    "r_contam_maxdiff": 0.0073855456632196115,
+    "r_counts_maxdiff": 0.21649607366840318,
+    "true_contam_pearson": 0.9959943529570221,
+    "true_contam_mae": 0.08002412076608176,
+    "true_contam_bias": -0.0796598248640451,
+    "true_native_relfro": 0.19949396929882757
+   }
+  },
+  "sweep_d5_5_s12": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 650406,
+   "n_clusters": 5,
+   "true_mean": 0.49989303380631167,
+   "delta": [
+    5,
+    5
+   ],
+   "observed_vs_native_relfro": 0.6316323137447745,
+   "R": {
+    "total_s": 2.798,
+    "umap_s": 2.581,
+    "em_s": 0.217,
+    "n_iter": 45,
+    "delta": [
+     3.48542905233475,
+     2.52446315304594
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009771394013919354,
+    "mean_contamination": 0.42510115387826247,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9968212742138118,
+    "true_contam_mae": 0.07532280414679592,
+    "true_contam_bias": -0.07479187992804921,
+    "true_native_relfro": 0.1779188239357446
+   },
+   "niruff": {
+    "import_s": 1.8989020420704037,
+    "cold_s": 0.05313395906705409,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.2542356043191547,
+     2.2872725180550426
+    ],
+    "self_consistency": 0.06702705379713758,
+    "mean_contamination": 0.4125124087274695,
+    "frac_nonzero_kept": 0.5664508014993712,
+    "r_contam_pearson": 0.9998958539343538,
+    "r_contam_maxdiff": 0.028236321241611267,
+    "r_counts_maxdiff": 1.2080366787980505,
+    "true_contam_pearson": 0.9962531788261579,
+    "true_contam_mae": 0.08789613897832407,
+    "true_contam_bias": -0.08738062507884214,
+    "true_native_relfro": 0.2084187823466814
+   },
+   "omicverse": {
+    "import_s": 0.10371554107405245,
+    "cold_s": 0.7030944169964641,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.442788397798194,
+     2.4635282509445617
+    ],
+    "n_iter": 39,
+    "self_consistency": 0.0009757943554127291,
+    "mean_contamination": 0.42251400385771715,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999584925411988,
+    "r_contam_maxdiff": 0.00692233799363981,
+    "r_counts_maxdiff": 0.205233389566283,
+    "true_contam_pearson": 0.9967363844838046,
+    "true_contam_mae": 0.07791118324137776,
+    "true_contam_bias": -0.07737902994859451,
+    "true_native_relfro": 0.18064180559230483
+   },
+   "scdecontx": {
+    "import_s": 0.49858825001865625,
+    "cold_s": 0.5329032500740141,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.4718836810156795,
+     2.504009604005291
+    ],
+    "n_iter": 42,
+    "self_consistency": 0.0009787736676311054,
+    "mean_contamination": 0.4242158393634154,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999349488724075,
+    "r_contam_maxdiff": 0.005180070023619823,
+    "r_counts_maxdiff": 0.1507095367313811,
+    "true_contam_pearson": 0.9967187534468736,
+    "true_contam_mae": 0.07620564989724511,
+    "true_contam_bias": -0.07567719444289625,
+    "true_native_relfro": 0.17886007737089013
+   }
+  },
+  "sweep_d5_5_s13": {
+   "group": "sweep_g1000",
+   "n_cells": 2000,
+   "n_genes": 1000,
+   "nnz": 642520,
+   "n_clusters": 5,
+   "true_mean": 0.49604845665237896,
+   "delta": [
+    5,
+    5
+   ],
+   "observed_vs_native_relfro": 0.6450752387075107,
+   "R": {
+    "total_s": 2.782,
+    "umap_s": 2.588,
+    "em_s": 0.194,
+    "n_iter": 40,
+    "delta": [
+     3.5354601979493,
+     2.49712600772486
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009720522484594207,
+    "mean_contamination": 0.4186707905194945,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9960074836999786,
+    "true_contam_mae": 0.07771706092161833,
+    "true_contam_bias": -0.07737766613288445,
+    "true_native_relfro": 0.18888691897197685
+   },
+   "niruff": {
+    "import_s": 1.5425200830213726,
+    "cold_s": 0.055661375052295625,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.3324897240718565,
+     2.301512667460485
+    ],
+    "self_consistency": 0.07124787883276074,
+    "mean_contamination": 0.4082585453361273,
+    "frac_nonzero_kept": 0.5757875241237627,
+    "r_contam_pearson": 0.9999173949489722,
+    "r_contam_maxdiff": 0.023188455776527006,
+    "r_counts_maxdiff": 0.9464751984304005,
+    "true_contam_pearson": 0.996084221203075,
+    "true_contam_mae": 0.08810774796796411,
+    "true_contam_bias": -0.08778991131625168,
+    "true_native_relfro": 0.21740275150270824
+   },
+   "omicverse": {
+    "import_s": 0.10074545897077769,
+    "cold_s": 0.6574907079339027,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.521737727513426,
+     2.4781804267909378
+    ],
+    "n_iter": 37,
+    "self_consistency": 0.0009737739796095712,
+    "mean_contamination": 0.41784968117025256,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999767620934312,
+    "r_contam_maxdiff": 0.004300504081682588,
+    "r_counts_maxdiff": 0.13221004598605823,
+    "true_contam_pearson": 0.9960633998313406,
+    "true_contam_mae": 0.07853971408611858,
+    "true_contam_bias": -0.07819877548212642,
+    "true_native_relfro": 0.18971538997600032
+   },
+   "scdecontx": {
+    "import_s": 0.3302670830162242,
+    "cold_s": 0.3604886659886688,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.5107439779362135,
+     2.462850188173054
+    ],
+    "n_iter": 36,
+    "self_consistency": 0.000979030072824849,
+    "mean_contamination": 0.4171875269109645,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999965842598075,
+    "r_contam_maxdiff": 0.006794760748584011,
+    "r_counts_maxdiff": 0.20971158876593776,
+    "true_contam_pearson": 0.9961563626568798,
+    "true_contam_mae": 0.07920095383860758,
+    "true_contam_bias": -0.07886092974141451,
+    "true_native_relfro": 0.19036648508260856
+   }
+  },
+  "sweep15k_d1_10_s21": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1825999,
+   "n_clusters": 8,
+   "true_mean": 0.0899805268840579,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.2547955577607676,
+   "R": {
+    "total_s": 6.805,
+    "umap_s": 6.252,
+    "em_s": 0.553,
+    "n_iter": 33,
+    "delta": [
+     7.69409991124308,
+     0.473170177505682
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008571485358974534,
+    "mean_contamination": 0.06605213090307033,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.989078219765461,
+    "true_contam_mae": 0.023984101846945445,
+    "true_contam_bias": -0.023928395980987564,
+    "true_native_relfro": 0.15561343867649385
+   },
+   "niruff": {
+    "import_s": 1.4768708340125158,
+    "cold_s": 0.5099870840786025,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.9245105657502215,
+     0.4381731868331133
+    ],
+    "self_consistency": 0.03484132697426612,
+    "mean_contamination": 0.058635635446297595,
+    "frac_nonzero_kept": 0.940951774891443,
+    "r_contam_pearson": 0.9974707442090714,
+    "r_contam_maxdiff": 0.03291349187774802,
+    "r_counts_maxdiff": 1.4033775802744506,
+    "true_contam_pearson": 0.9817673351061337,
+    "true_contam_mae": 0.03135662555501282,
+    "true_contam_bias": -0.03134489143776031,
+    "true_native_relfro": 0.1816507950795955
+   },
+   "omicverse": {
+    "import_s": 0.09826133295428008,
+    "cold_s": 1.0314147090539336,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.754363646886369,
+     0.4819798156970377
+    ],
+    "n_iter": 30,
+    "self_consistency": 0.0009881256156485906,
+    "mean_contamination": 0.06661051772835018,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999670163157256,
+    "r_contam_maxdiff": 0.006852898400105254,
+    "r_counts_maxdiff": 0.6799439160822135,
+    "true_contam_pearson": 0.989523930214476,
+    "true_contam_mae": 0.023431146265145548,
+    "true_contam_bias": -0.02337000915570771,
+    "true_native_relfro": 0.15498818005904838
+   },
+   "scdecontx": {
+    "import_s": 0.3171531659318134,
+    "cold_s": 0.34150762506760657,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.755110865137656,
+     0.4822550683245377
+    ],
+    "n_iter": 30,
+    "self_consistency": 0.0009763898584327357,
+    "mean_contamination": 0.06660019596102174,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999656787932104,
+    "r_contam_maxdiff": 0.006440417487628908,
+    "r_counts_maxdiff": 0.7119576954538624,
+    "true_contam_pearson": 0.9895158585191046,
+    "true_contam_mae": 0.023441105001651735,
+    "true_contam_bias": -0.023380330923036156,
+    "true_native_relfro": 0.15498955677042728
+   }
+  },
+  "sweep15k_d1_10_s22": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1836043,
+   "n_clusters": 8,
+   "true_mean": 0.09215842010282828,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.25900393578168157,
+   "R": {
+    "total_s": 7.587,
+    "umap_s": 7.053,
+    "em_s": 0.533999999999999,
+    "n_iter": 33,
+    "delta": [
+     7.40221137541065,
+     0.468717311787402
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009466602617616109,
+    "mean_contamination": 0.06788572015700803,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9897221492400733,
+    "true_contam_mae": 0.024324459575509508,
+    "true_contam_bias": -0.02427269994582026,
+    "true_native_relfro": 0.1576987138615273
+   },
+   "niruff": {
+    "import_s": 1.5752427499974146,
+    "cold_s": 0.5521496250294149,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.6754238409007085,
+     0.4360574298716186
+    ],
+    "self_consistency": 0.03146256284975535,
+    "mean_contamination": 0.06045402144264158,
+    "frac_nonzero_kept": 0.9390194020510413,
+    "r_contam_pearson": 0.9975291965607502,
+    "r_contam_maxdiff": 0.033285886886780185,
+    "r_counts_maxdiff": 1.9302787293932697,
+    "true_contam_pearson": 0.9827565589033197,
+    "true_contam_mae": 0.03171721539685937,
+    "true_contam_bias": -0.03170439866018671,
+    "true_native_relfro": 0.1838636742334384
+   },
+   "omicverse": {
+    "import_s": 0.09722724999301136,
+    "cold_s": 1.2236307499697432,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.367972112337085,
+     0.4637266640348137
+    ],
+    "n_iter": 35,
+    "self_consistency": 0.0008912371278045946,
+    "mean_contamination": 0.0675731893900632,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999799881213413,
+    "r_contam_maxdiff": 0.004032455630215204,
+    "r_counts_maxdiff": 0.7201488429995534,
+    "true_contam_pearson": 0.9894737017862524,
+    "true_contam_mae": 0.024634998711906667,
+    "true_contam_bias": -0.024585230712765083,
+    "true_native_relfro": 0.15806372789302633
+   },
+   "scdecontx": {
+    "import_s": 0.3129192090127617,
+    "cold_s": 0.3445762499468401,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.4027157760831015,
+     0.46884008546646794
+    ],
+    "n_iter": 33,
+    "self_consistency": 0.0008946057254481943,
+    "mean_contamination": 0.06789174737229187,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999849744962631,
+    "r_contam_maxdiff": 0.0044151108675012755,
+    "r_counts_maxdiff": 0.7266039240632447,
+    "true_contam_pearson": 0.9897173258112701,
+    "true_contam_mae": 0.024318312111477444,
+    "true_contam_bias": -0.02426667273053642,
+    "true_native_relfro": 0.15768348683307615
+   }
+  },
+  "sweep15k_d1_10_s23": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1844088,
+   "n_clusters": 8,
+   "true_mean": 0.09100730166564858,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.2583770681160378,
+   "R": {
+    "total_s": 6.164,
+    "umap_s": 5.637,
+    "em_s": 0.527,
+    "n_iter": 34,
+    "delta": [
+     7.29945697437679,
+     0.459909593311434
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008847076179791385,
+    "mean_contamination": 0.06623175809817675,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9893418401775915,
+    "true_contam_mae": 0.024819982937132896,
+    "true_contam_bias": -0.024775543567471848,
+    "true_native_relfro": 0.15852253189009413
+   },
+   "niruff": {
+    "import_s": 1.427009667037055,
+    "cold_s": 0.5703690000809729,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.53865159514183,
+     0.41404603202560586
+    ],
+    "self_consistency": 0.032208488277831404,
+    "mean_contamination": 0.05871756072553349,
+    "frac_nonzero_kept": 0.940379743266048,
+    "r_contam_pearson": 0.997414735550545,
+    "r_contam_maxdiff": 0.03555316126631904,
+    "r_counts_maxdiff": 1.1420921541451263,
+    "true_contam_pearson": 0.9819346127174143,
+    "true_contam_mae": 0.03229483710724675,
+    "true_contam_bias": -0.03228974094011511,
+    "true_native_relfro": 0.18466597120765357
+   },
+   "omicverse": {
+    "import_s": 0.09492695797234774,
+    "cold_s": 1.2541473750025034,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.254191546148073,
+     0.45341181589923857
+    ],
+    "n_iter": 37,
+    "self_consistency": 0.0008623506798021117,
+    "mean_contamination": 0.06580499103291318,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999734885222007,
+    "r_contam_maxdiff": 0.006545821035639551,
+    "r_counts_maxdiff": 0.742708894890046,
+    "true_contam_pearson": 0.9889943930936367,
+    "true_contam_mae": 0.025244650446858273,
+    "true_contam_bias": -0.025202310632735418,
+    "true_native_relfro": 0.15902725097989634
+   },
+   "scdecontx": {
+    "import_s": 0.34108024998568,
+    "cold_s": 0.37837316701188684,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.225747763800888,
+     0.44951438903622004
+    ],
+    "n_iter": 39,
+    "self_consistency": 0.0008476968733047707,
+    "mean_contamination": 0.06554849110161828,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999600603357365,
+    "r_contam_maxdiff": 0.006300132535320975,
+    "r_counts_maxdiff": 0.6889604891962319,
+    "true_contam_pearson": 0.9887978747046846,
+    "true_contam_mae": 0.025500031317903394,
+    "true_contam_bias": -0.02545881056403031,
+    "true_native_relfro": 0.15932988009157664
+   }
+  },
+  "sweep15k_d2_8_s21": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1899045,
+   "n_clusters": 8,
+   "true_mean": 0.20225323818652036,
+   "delta": [
+    2,
+    8
+   ],
+   "observed_vs_native_relfro": 0.4203544180590207,
+   "R": {
+    "total_s": 5.922,
+    "umap_s": 5.338,
+    "em_s": 0.583999999999998,
+    "n_iter": 38,
+    "delta": [
+     5.3908299310275,
+     0.80412163973151
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009300497651698741,
+    "mean_contamination": 0.1450458761470201,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.991223532385498,
+    "true_contam_mae": 0.057208549551432814,
+    "true_contam_bias": -0.057207362039500276,
+    "true_native_relfro": 0.23895832809528017
+   },
+   "niruff": {
+    "import_s": 1.4108287920244038,
+    "cold_s": 0.3795683750649914,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.30431030418949,
+     0.8372463883455245
+    ],
+    "self_consistency": 0.050848841039396575,
+    "mean_contamination": 0.1353637630736384,
+    "frac_nonzero_kept": 0.8617815796887383,
+    "r_contam_pearson": 0.999398513411993,
+    "r_contam_maxdiff": 0.02936220752237896,
+    "r_counts_maxdiff": 1.3558646171217443,
+    "true_contam_pearson": 0.9880804447784742,
+    "true_contam_mae": 0.06688947511288197,
+    "true_contam_bias": -0.06688947511288197,
+    "true_native_relfro": 0.2827329975140627
+   },
+   "omicverse": {
+    "import_s": 0.09847062500193715,
+    "cold_s": 1.3076625830726698,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.386867583942845,
+     0.8028006639984843
+    ],
+    "n_iter": 38,
+    "self_consistency": 0.000924038116663313,
+    "mean_contamination": 0.1449672813665112,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999945767256356,
+    "r_contam_maxdiff": 0.0036392603191419334,
+    "r_counts_maxdiff": 0.3844120824262288,
+    "true_contam_pearson": 0.9911917117298296,
+    "true_contam_mae": 0.05728714923417626,
+    "true_contam_bias": -0.05728595682000918,
+    "true_native_relfro": 0.2390413295549968
+   },
+   "scdecontx": {
+    "import_s": 0.29990824998822063,
+    "cold_s": 0.34319983306340873,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.390239940758475,
+     0.8040238517111523
+    ],
+    "n_iter": 38,
+    "self_consistency": 0.0009288723947643573,
+    "mean_contamination": 0.1450524676231813,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999953175204738,
+    "r_contam_maxdiff": 0.0034404197750987665,
+    "r_counts_maxdiff": 0.35465649823865375,
+    "true_contam_pearson": 0.9912101418186321,
+    "true_contam_mae": 0.057202005883241404,
+    "true_contam_bias": -0.05720077056333908,
+    "true_native_relfro": 0.23896065823182314
+   }
+  },
+  "sweep15k_d2_8_s22": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1897764,
+   "n_clusters": 8,
+   "true_mean": 0.19836960599177883,
+   "delta": [
+    2,
+    8
+   ],
+   "observed_vs_native_relfro": 0.4149362691166417,
+   "R": {
+    "total_s": 6.32,
+    "umap_s": 5.695,
+    "em_s": 0.625000000000001,
+    "n_iter": 40,
+    "delta": [
+     5.29629801179807,
+     0.758397880377623
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009499094008249657,
+    "mean_contamination": 0.1414444432458124,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9908731197302221,
+    "true_contam_mae": 0.0569299324360429,
+    "true_contam_bias": -0.0569251627459664,
+    "true_native_relfro": 0.23817530160520922
+   },
+   "niruff": {
+    "import_s": 1.4614023340400308,
+    "cold_s": 0.38156937493477017,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.1450017065166085,
+     0.7933428790023581
+    ],
+    "self_consistency": 0.04848484705364231,
+    "mean_contamination": 0.13264187927916674,
+    "frac_nonzero_kept": 0.8644799880280162,
+    "r_contam_pearson": 0.9994985666383737,
+    "r_contam_maxdiff": 0.02545872873533208,
+    "r_counts_maxdiff": 0.9999999980750273,
+    "true_contam_pearson": 0.988060483516724,
+    "true_contam_mae": 0.06572778575031755,
+    "true_contam_bias": -0.0657277267126121,
+    "true_native_relfro": 0.27957156566980607
+   },
+   "omicverse": {
+    "import_s": 0.09840195800643414,
+    "cold_s": 1.4409308329923078,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.286495716150861,
+     0.7549574533924106
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009166426235657603,
+    "mean_contamination": 0.141201891426388,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999957667817587,
+    "r_contam_maxdiff": 0.003181524305898891,
+    "r_counts_maxdiff": 0.41920197959482064,
+    "true_contam_pearson": 0.990805185915863,
+    "true_contam_mae": 0.05717238834459274,
+    "true_contam_bias": -0.05716771456539081,
+    "true_native_relfro": 0.23841819824077123
+   },
+   "scdecontx": {
+    "import_s": 0.2966076669981703,
+    "cold_s": 0.337253125035204,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.309030935829627,
+     0.7628971337426337
+    ],
+    "n_iter": 39,
+    "self_consistency": 0.000906987795336045,
+    "mean_contamination": 0.14175053365596524,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999949713403087,
+    "r_contam_maxdiff": 0.0048114368210866836,
+    "r_counts_maxdiff": 0.6294354171532988,
+    "true_contam_pearson": 0.9909822294222441,
+    "true_contam_mae": 0.056623913507586575,
+    "true_contam_bias": -0.0566190723358136,
+    "true_native_relfro": 0.2378675075556276
+   }
+  },
+  "sweep15k_d2_8_s23": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1909942,
+   "n_clusters": 8,
+   "true_mean": 0.20477801211551977,
+   "delta": [
+    2,
+    8
+   ],
+   "observed_vs_native_relfro": 0.42632415868073764,
+   "R": {
+    "total_s": 6.097,
+    "umap_s": 5.486,
+    "em_s": 0.611000000000002,
+    "n_iter": 39,
+    "delta": [
+     5.12222018571099,
+     0.776507830690834
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.000917070737080871,
+    "mean_contamination": 0.14754260977390513,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9912307625244404,
+    "true_contam_mae": 0.05724841122625032,
+    "true_contam_bias": -0.05723540234161459,
+    "true_native_relfro": 0.24154863722683964
+   },
+   "niruff": {
+    "import_s": 1.428266957984306,
+    "cold_s": 0.38763208396267146,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.079154158025599,
+     0.8229909090287487
+    ],
+    "self_consistency": 0.05002748155844672,
+    "mean_contamination": 0.13849852005356353,
+    "frac_nonzero_kept": 0.857763220034954,
+    "r_contam_pearson": 0.9994851915814404,
+    "r_contam_maxdiff": 0.028919323895147883,
+    "r_counts_maxdiff": 1.0022613823660702,
+    "true_contam_pearson": 0.9884267926348828,
+    "true_contam_mae": 0.06628175102608824,
+    "true_contam_bias": -0.0662794920619562,
+    "true_native_relfro": 0.28475607481072257
+   },
+   "omicverse": {
+    "import_s": 0.09731750003993511,
+    "cold_s": 1.2743970419978723,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.143335233067133,
+     0.7840880700123256
+    ],
+    "n_iter": 37,
+    "self_consistency": 0.0009274682963183942,
+    "mean_contamination": 0.14806753751160462,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999902156074353,
+    "r_contam_maxdiff": 0.007248641805342539,
+    "r_counts_maxdiff": 0.5265340528779991,
+    "true_contam_pearson": 0.9914086559220928,
+    "true_contam_mae": 0.05672383558075548,
+    "true_contam_bias": -0.05671047460391514,
+    "true_native_relfro": 0.24102579198721202
+   },
+   "scdecontx": {
+    "import_s": 0.2991512920707464,
+    "cold_s": 0.3384573330404237,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     5.156038389531424,
+     0.7887920990679509
+    ],
+    "n_iter": 36,
+    "self_consistency": 0.0009293781328040263,
+    "mean_contamination": 0.1483889564689378,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999882764677502,
+    "r_contam_maxdiff": 0.006073753352836751,
+    "r_counts_maxdiff": 0.4318937624500639,
+    "true_contam_pearson": 0.9915041005933023,
+    "true_contam_mae": 0.05640259333676347,
+    "true_contam_bias": -0.05638905564658195,
+    "true_native_relfro": 0.24070794309437832
+   }
+  },
+  "sweep15k_d3_7_s21": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1956442,
+   "n_clusters": 8,
+   "true_mean": 0.3047961986842272,
+   "delta": [
+    3,
+    7
+   ],
+   "observed_vs_native_relfro": 0.5683819003754929,
+   "R": {
+    "total_s": 6.444,
+    "umap_s": 5.831,
+    "em_s": 0.613,
+    "n_iter": 39,
+    "delta": [
+     4.43155497433664,
+     1.0953887661359
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009348460488605645,
+    "mean_contamination": 0.21543855389857222,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9916116760912448,
+    "true_contam_mae": 0.089357644785655,
+    "true_contam_bias": -0.089357644785655,
+    "true_native_relfro": 0.30923891278415044
+   },
+   "niruff": {
+    "import_s": 1.4218709169654176,
+    "cold_s": 0.45720670896116644,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.2750383551609845,
+     1.0844740205076735
+    ],
+    "self_consistency": 0.07481876053028269,
+    "mean_contamination": 0.20152787014153614,
+    "frac_nonzero_kept": 0.7926404156116051,
+    "r_contam_pearson": 0.9994545098376714,
+    "r_contam_maxdiff": 0.03711360314059721,
+    "r_counts_maxdiff": 0.9999987084425379,
+    "true_contam_pearson": 0.9886382598521355,
+    "true_contam_mae": 0.10326832854269107,
+    "true_contam_bias": -0.10326832854269107,
+    "true_native_relfro": 0.3713776596441095
+   },
+   "omicverse": {
+    "import_s": 0.10173095902428031,
+    "cold_s": 1.486927832942456,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.4141220479391725,
+     1.0850775708919371
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009471380477845889,
+    "mean_contamination": 0.21476379246238572,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999956419094818,
+    "r_contam_maxdiff": 0.003819526108974569,
+    "r_counts_maxdiff": 0.3754080145776128,
+    "true_contam_pearson": 0.9914809978329346,
+    "true_contam_mae": 0.09003240622184153,
+    "true_contam_bias": -0.09003240622184153,
+    "true_native_relfro": 0.3099269213046879
+   },
+   "scdecontx": {
+    "import_s": 0.2994831670075655,
+    "cold_s": 0.3474350000033155,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.405967839603007,
+     1.080423078572492
+    ],
+    "n_iter": 42,
+    "self_consistency": 0.0008937084379578852,
+    "mean_contamination": 0.21445967077111283,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999907521528333,
+    "r_contam_maxdiff": 0.0052668804654636275,
+    "r_counts_maxdiff": 0.37034547997284134,
+    "true_contam_pearson": 0.9913980446022684,
+    "true_contam_mae": 0.09033652791311439,
+    "true_contam_bias": -0.09033652791311439,
+    "true_native_relfro": 0.31023904706695354
+   }
+  },
+  "sweep15k_d3_7_s22": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1950547,
+   "n_clusters": 8,
+   "true_mean": 0.2973019418564202,
+   "delta": [
+    3,
+    7
+   ],
+   "observed_vs_native_relfro": 0.5564388685328661,
+   "R": {
+    "total_s": 6.782,
+    "umap_s": 6.131,
+    "em_s": 0.651,
+    "n_iter": 40,
+    "delta": [
+     4.45102710158018,
+     1.061379557127
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009539543733121936,
+    "mean_contamination": 0.20994321881327832,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.992303692456871,
+    "true_contam_mae": 0.08738230729510268,
+    "true_contam_bias": -0.08735872304314193,
+    "true_native_relfro": 0.30532299754109804
+   },
+   "niruff": {
+    "import_s": 1.4110837921034545,
+    "cold_s": 0.460059417062439,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.186598732456866,
+     1.026465235470358
+    ],
+    "self_consistency": 0.07460521618162941,
+    "mean_contamination": 0.19606340357634702,
+    "frac_nonzero_kept": 0.7994598438284235,
+    "r_contam_pearson": 0.999462127843375,
+    "r_contam_maxdiff": 0.032358221716549014,
+    "r_counts_maxdiff": 1.148563794579636,
+    "true_contam_pearson": 0.9895312718112192,
+    "true_contam_mae": 0.10125076562544837,
+    "true_contam_bias": -0.10123853828007323,
+    "true_native_relfro": 0.36625999611211546
+   },
+   "omicverse": {
+    "import_s": 0.09605616610497236,
+    "cold_s": 1.4378867089981213,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.442048277177245,
+     1.0560794408846572
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009538418025962017,
+    "mean_contamination": 0.20959189315618224,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999922965301379,
+    "r_contam_maxdiff": 0.005302580545428426,
+    "r_counts_maxdiff": 0.3230021498956924,
+    "true_contam_pearson": 0.9922096084648914,
+    "true_contam_mae": 0.08773330687843672,
+    "true_contam_bias": -0.08771004870023798,
+    "true_native_relfro": 0.3056878785073248
+   },
+   "scdecontx": {
+    "import_s": 0.3008684579981491,
+    "cold_s": 0.35156912507954985,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.442178133964218,
+     1.05614714064351
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009723298482979814,
+    "mean_contamination": 0.2095945623603177,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999961016951393,
+    "r_contam_maxdiff": 0.004501699894894094,
+    "r_counts_maxdiff": 0.5800890730589632,
+    "true_contam_pearson": 0.9922264824472048,
+    "true_contam_mae": 0.0877309791187549,
+    "true_contam_bias": -0.08770737949610254,
+    "true_native_relfro": 0.30568093471732916
+   }
+  },
+  "sweep15k_d3_7_s23": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1963025,
+   "n_clusters": 8,
+   "true_mean": 0.3028915562068898,
+   "delta": [
+    3,
+    7
+   ],
+   "observed_vs_native_relfro": 0.5653203624906742,
+   "R": {
+    "total_s": 6.769,
+    "umap_s": 6.095,
+    "em_s": 0.673999999999999,
+    "n_iter": 42,
+    "delta": [
+     4.39040498340943,
+     1.07371057744641
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009070167573152418,
+    "mean_contamination": 0.21463662638727135,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9913376354582186,
+    "true_contam_mae": 0.08825492981961842,
+    "true_contam_bias": -0.08825492981961842,
+    "true_native_relfro": 0.3084743935290189
+   },
+   "niruff": {
+    "import_s": 1.4077106670010835,
+    "cold_s": 0.3803463749354705,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.325601806735028,
+     1.1171658575914067
+    ],
+    "self_consistency": 0.07397166888464046,
+    "mean_contamination": 0.20444533520824495,
+    "frac_nonzero_kept": 0.7905222806637715,
+    "r_contam_pearson": 0.9997381998235645,
+    "r_contam_maxdiff": 0.024173010068095087,
+    "r_counts_maxdiff": 0.9999871791170284,
+    "true_contam_pearson": 0.9893471070417578,
+    "true_contam_mae": 0.09844622099864482,
+    "true_contam_bias": -0.09844622099864482,
+    "true_native_relfro": 0.3663095730093802
+   },
+   "omicverse": {
+    "import_s": 0.09552191698458046,
+    "cold_s": 1.3496285830624402,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.414036712838312,
+     1.0878353050686633
+    ],
+    "n_iter": 39,
+    "self_consistency": 0.0009307452515805725,
+    "mean_contamination": 0.21558676620454534,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999920917907523,
+    "r_contam_maxdiff": 0.005283599817655242,
+    "r_counts_maxdiff": 0.41522218589423326,
+    "true_contam_pearson": 0.9914890536217884,
+    "true_contam_mae": 0.08730479000234444,
+    "true_contam_bias": -0.08730479000234444,
+    "true_native_relfro": 0.30752200907785776
+   },
+   "scdecontx": {
+    "import_s": 0.2994312080554664,
+    "cold_s": 0.355127708055079,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.3985800106822275,
+     1.0786493156157286
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009244501779622771,
+    "mean_contamination": 0.21497258973152134,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999962588439936,
+    "r_contam_maxdiff": 0.0036912880414046237,
+    "r_counts_maxdiff": 0.32606102449662105,
+    "true_contam_pearson": 0.991376280139849,
+    "true_contam_mae": 0.08791896647536841,
+    "true_contam_bias": -0.08791896647536841,
+    "true_native_relfro": 0.3081414942478331
+   }
+  },
+  "sweep15k_d4_6_s21": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2001889,
+   "n_clusters": 8,
+   "true_mean": 0.40499328806198537,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.7223075820617212,
+   "R": {
+    "total_s": 5.987,
+    "umap_s": 5.326,
+    "em_s": 0.661,
+    "n_iter": 41,
+    "delta": [
+     3.75574818736072,
+     1.36142768516918
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009511931994641287,
+    "mean_contamination": 0.2833598013050065,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.990986351296437,
+    "true_contam_mae": 0.12163770861725474,
+    "true_contam_bias": -0.12163348675697888,
+    "true_native_relfro": 0.3818905939171775
+   },
+   "niruff": {
+    "import_s": 1.4303688330110162,
+    "cold_s": 0.4714490829501301,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.568385623003544,
+     1.3177454575088348
+    ],
+    "self_consistency": 0.10108056282643363,
+    "mean_contamination": 0.26904900298170104,
+    "frac_nonzero_kept": 0.7279439569326771,
+    "r_contam_pearson": 0.9996256814984048,
+    "r_contam_maxdiff": 0.034089923705086525,
+    "r_counts_maxdiff": 0.999982284179842,
+    "true_contam_pearson": 0.9884032004706711,
+    "true_contam_mae": 0.13594702597575445,
+    "true_contam_bias": -0.1359442850802844,
+    "true_native_relfro": 0.46143149030497965
+   },
+   "omicverse": {
+    "import_s": 0.10385012498591095,
+    "cold_s": 1.527968957903795,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.74733629978829,
+     1.3539625198451948
+    ],
+    "n_iter": 42,
+    "self_consistency": 0.0009736209741859486,
+    "mean_contamination": 0.282837424095399,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999952970986408,
+    "r_contam_maxdiff": 0.0034673720809175537,
+    "r_counts_maxdiff": 0.2411095009414224,
+    "true_contam_pearson": 0.990869461380398,
+    "true_contam_mae": 0.12215988593186004,
+    "true_contam_bias": -0.12215586396658633,
+    "true_native_relfro": 0.382449180606807
+   },
+   "scdecontx": {
+    "import_s": 0.29510758304968476,
+    "cold_s": 0.351582583039999,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.7501159281260033,
+     1.356512607590246
+    ],
+    "n_iter": 42,
+    "self_consistency": 0.0009710948226395733,
+    "mean_contamination": 0.28302150947317134,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999939770812676,
+    "r_contam_maxdiff": 0.00367307212225286,
+    "r_counts_maxdiff": 0.2637584822819572,
+    "true_contam_pearson": 0.9908539080132935,
+    "true_contam_mae": 0.1219763161480475,
+    "true_contam_bias": -0.12197177858881404,
+    "true_native_relfro": 0.38226263913352687
+   }
+  },
+  "sweep15k_d4_6_s22": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1997226,
+   "n_clusters": 8,
+   "true_mean": 0.39529559159556066,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.7094498437480846,
+   "R": {
+    "total_s": 6.542,
+    "umap_s": 5.863,
+    "em_s": 0.679000000000001,
+    "n_iter": 41,
+    "delta": [
+     3.60360909686613,
+     1.26231150894525
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009519094696187891,
+    "mean_contamination": 0.2770223515748683,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9916952976990323,
+    "true_contam_mae": 0.1182763504537134,
+    "true_contam_bias": -0.11827324002069238,
+    "true_native_relfro": 0.37552595720195886
+   },
+   "niruff": {
+    "import_s": 1.4108890829375014,
+    "cold_s": 0.4730878749396652,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.4112954085637557,
+     1.2180042476944561
+    ],
+    "self_consistency": 0.09784006811816781,
+    "mean_contamination": 0.2624555440779416,
+    "frac_nonzero_kept": 0.7308196468501812,
+    "r_contam_pearson": 0.9996266534625966,
+    "r_contam_maxdiff": 0.03437266791454677,
+    "r_counts_maxdiff": 1.183293664649618,
+    "true_contam_pearson": 0.9892589784865116,
+    "true_contam_mae": 0.13284186611162963,
+    "true_contam_bias": -0.1328400475176191,
+    "true_native_relfro": 0.4517219142701936
+   },
+   "omicverse": {
+    "import_s": 0.09734841610770673,
+    "cold_s": 1.557833458064124,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.5867643067340174,
+     1.2482773342789837
+    ],
+    "n_iter": 44,
+    "self_consistency": 0.0009421030013192083,
+    "mean_contamination": 0.2760841511004753,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999927439136196,
+    "r_contam_maxdiff": 0.005943321213984831,
+    "r_counts_maxdiff": 0.37344871887915243,
+    "true_contam_pearson": 0.9915030579343002,
+    "true_contam_mae": 0.11921396878774268,
+    "true_contam_bias": -0.11921144049508534,
+    "true_native_relfro": 0.3765632676435254
+   },
+   "scdecontx": {
+    "import_s": 0.29627441707998514,
+    "cold_s": 0.3537096669897437,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.593032848046858,
+     1.2534465721435821
+    ],
+    "n_iter": 43,
+    "self_consistency": 0.0009569042492153512,
+    "mean_contamination": 0.2764287455992755,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999937118804768,
+    "r_contam_maxdiff": 0.004199038276675449,
+    "r_counts_maxdiff": 0.3023795662905799,
+    "true_contam_pearson": 0.9915961902704107,
+    "true_contam_mae": 0.11886979665042414,
+    "true_contam_bias": -0.11886684599628522,
+    "true_native_relfro": 0.37617748497060166
+   }
+  },
+  "sweep15k_d4_6_s23": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2012589,
+   "n_clusters": 8,
+   "true_mean": 0.40548288921296677,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.7267013312248414,
+   "R": {
+    "total_s": 6.141,
+    "umap_s": 5.461,
+    "em_s": 0.68,
+    "n_iter": 42,
+    "delta": [
+     3.55139751237405,
+     1.29404100482476
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009799180511566447,
+    "mean_contamination": 0.2849740663580197,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.991497511395755,
+    "true_contam_mae": 0.12052193077060414,
+    "true_contam_bias": -0.12050882285494709,
+    "true_native_relfro": 0.3829743518762018
+   },
+   "niruff": {
+    "import_s": 1.3997521660057828,
+    "cold_s": 0.49440033303108066,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.3856976332569206,
+     1.2636284773119173
+    ],
+    "self_consistency": 0.09423865238713314,
+    "mean_contamination": 0.2711589620414727,
+    "frac_nonzero_kept": 0.7227824458943182,
+    "r_contam_pearson": 0.9996449800179673,
+    "r_contam_maxdiff": 0.03462463376643175,
+    "r_counts_maxdiff": 0.9999391909835339,
+    "true_contam_pearson": 0.9891478024191515,
+    "true_contam_mae": 0.1343369451938413,
+    "true_contam_bias": -0.13432392717149408,
+    "true_native_relfro": 0.46037889116290076
+   },
+   "omicverse": {
+    "import_s": 0.09705370909068733,
+    "cold_s": 1.4501878750743344,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.552581874363831,
+     1.2950867196148506
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009588242610318043,
+    "mean_contamination": 0.28501285349282623,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999956279342076,
+    "r_contam_maxdiff": 0.003644637523344832,
+    "r_counts_maxdiff": 0.3673065366489883,
+    "true_contam_pearson": 0.9914891607557613,
+    "true_contam_mae": 0.1204831585318329,
+    "true_contam_bias": -0.12047003572014049,
+    "true_native_relfro": 0.3829218660111307
+   },
+   "scdecontx": {
+    "import_s": 0.29735595802776515,
+    "cold_s": 0.34255870804190636,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     3.5630954468413707,
+     1.3042765449698814
+    ],
+    "n_iter": 40,
+    "self_consistency": 0.0009724180035399765,
+    "mean_contamination": 0.28567152600879603,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999922128393892,
+    "r_contam_maxdiff": 0.0071497084354270185,
+    "r_counts_maxdiff": 0.514764783311945,
+    "true_contam_pearson": 0.9916409475709563,
+    "true_contam_mae": 0.11982437673606924,
+    "true_contam_bias": -0.1198113632041708,
+    "true_native_relfro": 0.38221257531685904
+   }
+  },
+  "sweep15k_d5_5_s21": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2043152,
+   "n_clusters": 8,
+   "true_mean": 0.5046907217802469,
+   "delta": [
+    5,
+    5
+   ],
+   "observed_vs_native_relfro": 0.9088445402081164,
+   "R": {
+    "total_s": 6.148,
+    "umap_s": 5.469,
+    "em_s": 0.679000000000001,
+    "n_iter": 42,
+    "delta": [
+     2.87199047016709,
+     1.44954205143343
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009497765258677793,
+    "mean_contamination": 0.3531530726050552,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9890838648490776,
+    "true_contam_mae": 0.15159744209071724,
+    "true_contam_bias": -0.15153764917519166,
+    "true_native_relfro": 0.4657159079446402
+   },
+   "niruff": {
+    "import_s": 1.4014502500649542,
+    "cold_s": 0.4790047500282526,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.7384205494622726,
+     1.4177401813930965
+    ],
+    "self_consistency": 0.12927594914708762,
+    "mean_contamination": 0.34067826153343567,
+    "frac_nonzero_kept": 0.6529724660720299,
+    "r_contam_pearson": 0.9997629330447735,
+    "r_contam_maxdiff": 0.03644047484750723,
+    "r_counts_maxdiff": 0.9952547897135968,
+    "true_contam_pearson": 0.9869886400908686,
+    "true_contam_mae": 0.16407559867775912,
+    "true_contam_bias": -0.1640124602468112,
+    "true_native_relfro": 0.5588885989307919
+   },
+   "omicverse": {
+    "import_s": 0.10100437502842396,
+    "cold_s": 1.592961624963209,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.8597200976988675,
+     1.4354383087485802
+    ],
+    "n_iter": 45,
+    "self_consistency": 0.0009416249140755811,
+    "mean_contamination": 0.3522102052169779,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999879304045797,
+    "r_contam_maxdiff": 0.0065728359672474895,
+    "r_counts_maxdiff": 0.27190983278418995,
+    "true_contam_pearson": 0.988903219732464,
+    "true_contam_mae": 0.15254042026939588,
+    "true_contam_bias": -0.15248051656326897,
+    "true_native_relfro": 0.4668754455985796
+   },
+   "scdecontx": {
+    "import_s": 0.2970566659932956,
+    "cold_s": 0.34743154200259596,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.8730261074598853,
+     1.4508710654323347
+    ],
+    "n_iter": 42,
+    "self_consistency": 0.0009472113673755223,
+    "mean_contamination": 0.3532446080237772,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999916452892749,
+    "r_contam_maxdiff": 0.006669119374473544,
+    "r_counts_maxdiff": 0.2802651085846069,
+    "true_contam_pearson": 0.9890869905956806,
+    "true_contam_mae": 0.15150578383908778,
+    "true_contam_bias": -0.1514461137564697,
+    "true_native_relfro": 0.46560886596493983
+   }
+  },
+  "sweep15k_d5_5_s22": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2035283,
+   "n_clusters": 8,
+   "true_mean": 0.49492977001418814,
+   "delta": [
+    5,
+    5
+   ],
+   "observed_vs_native_relfro": 0.8886677591895258,
+   "R": {
+    "total_s": 6.153,
+    "umap_s": 5.423,
+    "em_s": 0.73,
+    "n_iter": 45,
+    "delta": [
+     2.75691304623849,
+     1.33518021488845
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009635213008686583,
+    "mean_contamination": 0.3439569761717583,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9891062055910891,
+    "true_contam_mae": 0.1510151384549342,
+    "true_contam_bias": -0.15097279384242987,
+    "true_native_relfro": 0.4609646590767693
+   },
+   "niruff": {
+    "import_s": 1.4607507500331849,
+    "cold_s": 0.4644105000188574,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.6200963570642806,
+     1.3008448199945102
+    ],
+    "self_consistency": 0.12844521239376838,
+    "mean_contamination": 0.3313019209571506,
+    "frac_nonzero_kept": 0.66339177401865,
+    "r_contam_pearson": 0.9997663668188963,
+    "r_contam_maxdiff": 0.035956125717435186,
+    "r_counts_maxdiff": 0.9990156440253324,
+    "true_contam_pearson": 0.9869420541169328,
+    "true_contam_mae": 0.16367700892012693,
+    "true_contam_bias": -0.16362784905703764,
+    "true_native_relfro": 0.5533739663498984
+   },
+   "omicverse": {
+    "import_s": 0.09746199997607619,
+    "cold_s": 1.5429252079920843,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.762497247874132,
+     1.3408508842683975
+    ],
+    "n_iter": 44,
+    "self_consistency": 0.0009462778037821473,
+    "mean_contamination": 0.34433307296498683,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999993277806819,
+    "r_contam_maxdiff": 0.005770758794016895,
+    "r_counts_maxdiff": 0.38938413261683563,
+    "true_contam_pearson": 0.9893392838509331,
+    "true_contam_mae": 0.15063894419804413,
+    "true_contam_bias": -0.1505966970492014,
+    "true_native_relfro": 0.460463131496899
+   },
+   "scdecontx": {
+    "import_s": 0.29932208301033825,
+    "cold_s": 0.3760506249964237,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.7492225668371697,
+     1.3266078542418425
+    ],
+    "n_iter": 48,
+    "self_consistency": 0.000940963732453004,
+    "mean_contamination": 0.3433622290327497,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999994113679836,
+    "r_contam_maxdiff": 0.0057296479386945015,
+    "r_counts_maxdiff": 0.23159254843916582,
+    "true_contam_pearson": 0.9891270279422751,
+    "true_contam_mae": 0.15160991106315835,
+    "true_contam_bias": -0.15156754098143851,
+    "true_native_relfro": 0.4616826311027956
+   }
+  },
+  "sweep15k_d5_5_s23": {
+   "group": "sweep_g15000",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2051515,
+   "n_clusters": 8,
+   "true_mean": 0.5030111991106144,
+   "delta": [
+    5,
+    5
+   ],
+   "observed_vs_native_relfro": 0.9074633949786048,
+   "R": {
+    "total_s": 6.093,
+    "umap_s": 5.43,
+    "em_s": 0.662999999999998,
+    "n_iter": 40,
+    "delta": [
+     2.82701399281011,
+     1.42829630251192
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009565688271318262,
+    "mean_contamination": 0.35407507020693396,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9907794403179935,
+    "true_contam_mae": 0.14896338275503324,
+    "true_contam_bias": -0.14893612890368055,
+    "true_native_relfro": 0.4631631971271845
+   },
+   "niruff": {
+    "import_s": 1.4009394999593496,
+    "cold_s": 0.4715927910292521,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.6954391931224464,
+     1.4003534912654896
+    ],
+    "self_consistency": 0.12138814738081671,
+    "mean_contamination": 0.3414641362925625,
+    "frac_nonzero_kept": 0.6505777437649737,
+    "r_contam_pearson": 0.9997549419824449,
+    "r_contam_maxdiff": 0.03305912079649015,
+    "r_counts_maxdiff": 0.9972856864042641,
+    "true_contam_pearson": 0.9887367882310227,
+    "true_contam_mae": 0.16157511030942717,
+    "true_contam_bias": -0.16154706281805198,
+    "true_native_relfro": 0.554957020933374
+   },
+   "omicverse": {
+    "import_s": 0.09614479204174131,
+    "cold_s": 1.5150401249993593,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.817126483418185,
+     1.4170707835185707
+    ],
+    "n_iter": 43,
+    "self_consistency": 0.0009622611186188568,
+    "mean_contamination": 0.35337097330404676,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999955968264177,
+    "r_contam_maxdiff": 0.005425647104081832,
+    "r_counts_maxdiff": 0.3577207548976778,
+    "true_contam_pearson": 0.9906368913242982,
+    "true_contam_mae": 0.1496676844344682,
+    "true_contam_bias": -0.14964022580656766,
+    "true_native_relfro": 0.46405065981162025
+   },
+   "scdecontx": {
+    "import_s": 0.29478791705332696,
+    "cold_s": 0.3470523750875145,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     2.825541417916439,
+     1.426707725049671
+    ],
+    "n_iter": 41,
+    "self_consistency": 0.0009618437633484023,
+    "mean_contamination": 0.35401787616584146,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999846302493028,
+    "r_contam_maxdiff": 0.005606716459970504,
+    "r_counts_maxdiff": 0.31274823683466246,
+    "true_contam_pearson": 0.9907448476110878,
+    "true_contam_mae": 0.1490212936994377,
+    "true_contam_bias": -0.14899332294477297,
+    "true_native_relfro": 0.4632554272784498
+   }
+  },
+  "merged_d1_10_s41": {
+   "group": "merged",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1825261,
+   "n_clusters": 8,
+   "true_mean": 0.0900214134895662,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.25418307966204073,
+   "R": {
+    "total_s": 7.653,
+    "umap_s": 6.814,
+    "em_s": 0.839,
+    "n_iter": 46,
+    "delta": [
+     8.05147504956112,
+     0.479001027107045
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009204675617680812,
+    "mean_contamination": 0.06017079078537201,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9807140444725722,
+    "true_contam_mae": 0.029939807394214667,
+    "true_contam_bias": -0.029850622704194186,
+    "true_native_relfro": 0.18544504023077113
+   },
+   "niruff": {
+    "import_s": 1.453793666092679,
+    "cold_s": 0.7893518749624491,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.8994767958740475,
+     0.3753474035346363
+    ],
+    "self_consistency": 0.06135276344539664,
+    "mean_contamination": 0.05081217493998018,
+    "frac_nonzero_kept": 0.9574877236734911,
+    "r_contam_pearson": 0.9943242711721062,
+    "r_contam_maxdiff": 0.04796250944203653,
+    "r_counts_maxdiff": 1.9976978513246482,
+    "true_contam_pearson": 0.9681011526001662,
+    "true_contam_mae": 0.03921764252685904,
+    "true_contam_bias": -0.039209238549586,
+    "true_native_relfro": 0.21068894199180294
+   },
+   "omicverse": {
+    "import_s": 0.09605312498752028,
+    "cold_s": 1.3418172081001103,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     8.172779349884415,
+     0.4943834618217321
+    ],
+    "n_iter": 40,
+    "self_consistency": 0.000990300627854164,
+    "mean_contamination": 0.06110738210492418,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.99989497684483,
+    "r_contam_maxdiff": 0.01149354756982019,
+    "r_counts_maxdiff": 0.8322228042500208,
+    "true_contam_pearson": 0.981629579925055,
+    "true_contam_mae": 0.029016948695177017,
+    "true_contam_bias": -0.028914031384642016,
+    "true_native_relfro": 0.1847858696598737
+   },
+   "scdecontx": {
+    "import_s": 0.29840145900379866,
+    "cold_s": 0.36033379193395376,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.990984474483665,
+     0.47155643634473343
+    ],
+    "n_iter": 50,
+    "self_consistency": 0.0009760408679725385,
+    "mean_contamination": 0.05971159408762568,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999434596263327,
+    "r_contam_maxdiff": 0.01150134446151509,
+    "r_counts_maxdiff": 0.8024700452646581,
+    "true_contam_pearson": 0.9802431163727053,
+    "true_contam_mae": 0.03039475896402157,
+    "true_contam_bias": -0.03030981940194051,
+    "true_native_relfro": 0.18577772249960517
+   }
+  },
+  "merged_d1_10_s42": {
+   "group": "merged",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 1825587,
+   "n_clusters": 8,
+   "true_mean": 0.0915165815277531,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.256861354792918,
+   "R": {
+    "total_s": 6.033,
+    "umap_s": 5.375,
+    "em_s": 0.657999999999999,
+    "n_iter": 45,
+    "delta": [
+     7.96803770350043,
+     0.48673134205697
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009496238468608732,
+    "mean_contamination": 0.061546166213743904,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9813658210335515,
+    "true_contam_mae": 0.030084157418424837,
+    "true_contam_bias": -0.029970415314009208,
+    "true_native_relfro": 0.18719400261843422
+   },
+   "niruff": {
+    "import_s": 1.4520354579435661,
+    "cold_s": 0.7981814160011709,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     6.812451250669613,
+     0.3785232620237385
+    ],
+    "self_consistency": 0.05929477995907817,
+    "mean_contamination": 0.05184261926896837,
+    "frac_nonzero_kept": 0.9567547314918434,
+    "r_contam_pearson": 0.994397962302399,
+    "r_contam_maxdiff": 0.04971129095525849,
+    "r_counts_maxdiff": 1.9999918632607379,
+    "true_contam_pearson": 0.9686147533527295,
+    "true_contam_mae": 0.03969100884424734,
+    "true_contam_bias": -0.03967396225878473,
+    "true_native_relfro": 0.21303558423804206
+   },
+   "omicverse": {
+    "import_s": 0.09750204102601856,
+    "cold_s": 1.53599004202988,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     7.971740960922503,
+     0.4869713158742574
+    ],
+    "n_iter": 45,
+    "self_consistency": 0.0008921121221300218,
+    "mean_contamination": 0.06157868538104715,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999709434144618,
+    "r_contam_maxdiff": 0.0065834834315192416,
+    "r_counts_maxdiff": 0.6588614017864141,
+    "true_contam_pearson": 0.9813891928713578,
+    "true_contam_mae": 0.030051878624783444,
+    "true_contam_bias": -0.029937896146705945,
+    "true_native_relfro": 0.1871787664110582
+   },
+   "scdecontx": {
+    "import_s": 0.295368458959274,
+    "cold_s": 0.3458755420288071,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     8.005026406022948,
+     0.49140093928004774
+    ],
+    "n_iter": 43,
+    "self_consistency": 0.0009417905640402013,
+    "mean_contamination": 0.061843807665516316,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.999962180057221,
+    "r_contam_maxdiff": 0.006974767734058859,
+    "r_counts_maxdiff": 0.6828933769226411,
+    "true_contam_pearson": 0.9816356547022971,
+    "true_contam_mae": 0.029790482614911972,
+    "true_contam_bias": -0.029672773862236785,
+    "true_native_relfro": 0.18699224873814027
+   }
+  },
+  "merged_d4_6_s41": {
+   "group": "merged",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2010598,
+   "n_clusters": 8,
+   "true_mean": 0.40212314641172814,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.7128158834740628,
+   "R": {
+    "total_s": 6.437,
+    "umap_s": 5.491,
+    "em_s": 0.946,
+    "n_iter": 55,
+    "delta": [
+     4.28563879995823,
+     1.38950701985883
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009517641978283031,
+    "mean_contamination": 0.25956534612172244,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9863389839460547,
+    "true_contam_mae": 0.1425578002900057,
+    "true_contam_bias": -0.1425578002900057,
+    "true_native_relfro": 0.4412604762881785
+   },
+   "niruff": {
+    "import_s": 1.5631854169769213,
+    "cold_s": 0.5945863329106942,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.025926924311234,
+     1.3123835159501536
+    ],
+    "self_consistency": 0.10729287285442801,
+    "mean_contamination": 0.24514636488401853,
+    "frac_nonzero_kept": 0.7753872231047678,
+    "r_contam_pearson": 0.9996247492615051,
+    "r_contam_maxdiff": 0.03649929841321892,
+    "r_counts_maxdiff": 0.999999742930202,
+    "true_contam_pearson": 0.984184329835139,
+    "true_contam_mae": 0.15697678152770964,
+    "true_contam_bias": -0.15697678152770964,
+    "true_native_relfro": 0.5269186186712025
+   },
+   "omicverse": {
+    "import_s": 0.10670479200780392,
+    "cold_s": 1.9054485420929268,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.3059482173728885,
+     1.4055019591453985
+    ],
+    "n_iter": 52,
+    "self_consistency": 0.00095909893718929,
+    "mean_contamination": 0.26056705420697185,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999891927876577,
+    "r_contam_maxdiff": 0.006186229221141634,
+    "r_counts_maxdiff": 0.40522233070881614,
+    "true_contam_pearson": 0.986537343235585,
+    "true_contam_mae": 0.14155609220475623,
+    "true_contam_bias": -0.14155609220475623,
+    "true_native_relfro": 0.44046544221593825
+   },
+   "scdecontx": {
+    "import_s": 0.3048657919280231,
+    "cold_s": 0.40920112491585314,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.28846830213982,
+     1.3916296396000671
+    ],
+    "n_iter": 55,
+    "self_consistency": 0.0009596567397398559,
+    "mean_contamination": 0.25969976123952015,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999924725070367,
+    "r_contam_maxdiff": 0.005419210368700023,
+    "r_counts_maxdiff": 0.47210684292557914,
+    "true_contam_pearson": 0.9864025958889245,
+    "true_contam_mae": 0.14242338517220796,
+    "true_contam_bias": -0.14242338517220796,
+    "true_native_relfro": 0.4411527947550712
+   }
+  },
+  "merged_d4_6_s42": {
+   "group": "merged",
+   "n_cells": 3000,
+   "n_genes": 15000,
+   "nnz": 2000334,
+   "n_clusters": 8,
+   "true_mean": 0.3995737339032409,
+   "delta": [
+    4,
+    6
+   ],
+   "observed_vs_native_relfro": 0.7075605442736647,
+   "R": {
+    "total_s": 6.565,
+    "umap_s": 5.708,
+    "em_s": 0.857,
+    "n_iter": 49,
+    "delta": [
+     4.4287114887652,
+     1.44910212751687
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0009507297419512686,
+    "mean_contamination": 0.2620952793901649,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.9864389714237283,
+    "true_contam_mae": 0.137478454513076,
+    "true_contam_bias": -0.137478454513076,
+    "true_native_relfro": 0.4361052785206641
+   },
+   "niruff": {
+    "import_s": 1.5237543750554323,
+    "cold_s": 0.5864107500528917,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.1504287596583165,
+     1.3620312973846507
+    ],
+    "self_consistency": 0.10569467635598051,
+    "mean_contamination": 0.24638103653982307,
+    "frac_nonzero_kept": 0.775692959275801,
+    "r_contam_pearson": 0.9994704464723352,
+    "r_contam_maxdiff": 0.0423321598474312,
+    "r_counts_maxdiff": 0.9999999929218577,
+    "true_contam_pearson": 0.9836254288169652,
+    "true_contam_mae": 0.15319269736341787,
+    "true_contam_bias": -0.15319269736341787,
+    "true_native_relfro": 0.5218953769682666
+   },
+   "omicverse": {
+    "import_s": 0.10223554109688848,
+    "cold_s": 1.9090948340017349,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.398960924586935,
+     1.4260111148767587
+    ],
+    "n_iter": 53,
+    "self_consistency": 0.0009584819625023042,
+    "mean_contamination": 0.26066317069801703,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999867039280451,
+    "r_contam_maxdiff": 0.007615153446773049,
+    "r_counts_maxdiff": 0.5204468902643133,
+    "true_contam_pearson": 0.9861966235937859,
+    "true_contam_mae": 0.13891056320522382,
+    "true_contam_bias": -0.13891056320522382,
+    "true_native_relfro": 0.4372104182742978
+   },
+   "scdecontx": {
+    "import_s": 0.3841510000638664,
+    "cold_s": 0.4702559580327943,
+    "warm_s": [],
+    "theta0_calls": null,
+    "delta": [
+     4.41421445821385,
+     1.4380237226885129
+    ],
+    "n_iter": 51,
+    "self_consistency": 0.000946293532572029,
+    "mean_contamination": 0.261432493284203,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999920977819748,
+    "r_contam_maxdiff": 0.004942846081338388,
+    "r_counts_maxdiff": 0.2994115896782175,
+    "true_contam_pearson": 0.9863200452138783,
+    "true_contam_mae": 0.13814124061903793,
+    "true_contam_bias": -0.13814124061903793,
+    "true_native_relfro": 0.4366227642223144
+   }
+  },
+  "speed_20k_g15k": {
+   "group": "speed",
+   "n_cells": 20000,
+   "n_genes": 15000,
+   "nnz": 12218398,
+   "n_clusters": 8,
+   "true_mean": 0.09072910335107282,
+   "delta": [
+    1,
+    10
+   ],
+   "observed_vs_native_relfro": 0.2571150757304194,
+   "R": {
+    "total_s": [
+     32.115,
+     28.039,
+     29.052
+    ],
+    "umap_s": [
+     29.811,
+     25.77,
+     26.8
+    ],
+    "em_s": [
+     2.30400000000001,
+     2.269,
+     2.252
+    ],
+    "n_iter": 17,
+    "delta": [
+     9.7009125874331,
+     0.912423166555578
+    ],
+    "celda_version": "1.24.0",
+    "r_version": "R version 4.5.0 (2025-04-11)",
+    "self_consistency": 0.0008816820279054678,
+    "mean_contamination": 0.08784927780387236,
+    "frac_nonzero_kept": 1.0,
+    "true_contam_pearson": 0.996252182727728,
+    "true_contam_mae": 0.005880220318639289,
+    "true_contam_bias": -0.0028798255472004455,
+    "true_native_relfro": 0.13268502781088654
+   },
+   "niruff": {
+    "import_s": 5.237671207985841,
+    "cold_s": 1.7252101249760017,
+    "warm_s": [
+     1.688978667021729,
+     1.6659614579984918,
+     1.8385433750227094
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.045553478776004,
+     0.8120497362848988
+    ],
+    "self_consistency": 0.041188218327703585,
+    "mean_contamination": 0.08126210751757985,
+    "frac_nonzero_kept": 0.917677914895226,
+    "r_contam_pearson": 0.9997636204175742,
+    "r_contam_maxdiff": 0.01699659892388481,
+    "r_counts_maxdiff": 1.7186290150652073,
+    "true_contam_pearson": 0.9958827826142135,
+    "true_contam_mae": 0.010072688251457206,
+    "true_contam_bias": -0.00946699583349296,
+    "true_native_relfro": 0.15158995964748948
+   },
+   "omicverse": {
+    "import_s": 0.1113627910381183,
+    "cold_s": 5.10259316698648,
+    "warm_s": [
+     4.911056832992472,
+     5.014501792029478,
+     5.044572667102329
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.61957244229474,
+     0.8905892066440222
+    ],
+    "n_iter": 20,
+    "self_consistency": 0.0007992686126604316,
+    "mean_contamination": 0.08709313453638821,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999935911431934,
+    "r_contam_maxdiff": 0.00281296639198959,
+    "r_counts_maxdiff": 0.6217888680373223,
+    "true_contam_pearson": 0.996217850459839,
+    "true_contam_mae": 0.006188652210099618,
+    "true_contam_bias": -0.003635968814684597,
+    "true_native_relfro": 0.1329951392103098
+   },
+   "scdecontx": {
+    "import_s": 0.38056620897259563,
+    "cold_s": 0.6134283330757171,
+    "warm_s": [
+     0.2557656249264255,
+     0.23688100010622293,
+     0.22662816697265953
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.699090165734935,
+     0.9119943610384488
+    ],
+    "n_iter": 17,
+    "self_consistency": 0.0008610317455607364,
+    "mean_contamination": 0.08783274195176873,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999986279550555,
+    "r_contam_maxdiff": 0.0014733631725464252,
+    "r_counts_maxdiff": 0.386530791452262,
+    "true_contam_pearson": 0.9962506873542192,
+    "true_contam_mae": 0.005886960795285173,
+    "true_contam_bias": -0.0028963613993040925,
+    "true_native_relfro": 0.13269121156475316
+   },
+   "scdecontx_1t": {
+    "import_s": 0.43526695808395743,
+    "cold_s": 1.2717750000301749,
+    "warm_s": [
+     0.7659082079771906,
+     0.7460857089608908,
+     0.7390946249943227
+    ],
+    "theta0_calls": null,
+    "delta": [
+     9.699090165734935,
+     0.9119943610384488
+    ],
+    "n_iter": 17,
+    "self_consistency": 0.0008610317455607364,
+    "mean_contamination": 0.08783274195176873,
+    "frac_nonzero_kept": 1.0,
+    "r_contam_pearson": 0.9999986279550555,
+    "r_contam_maxdiff": 0.0014733631725464252,
+    "r_counts_maxdiff": 0.386530791452262,
+    "true_contam_pearson": 0.9962506873542192,
+    "true_contam_mae": 0.005886960795285173,
+    "true_contam_bias": -0.0028963613993040925,
+    "true_native_relfro": 0.13269121156475316
+   }
+  }
+ }
+}

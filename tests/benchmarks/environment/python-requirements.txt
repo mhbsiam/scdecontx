@@ -1,0 +1,12 @@
+# Python environment used for results/results.json (Python 3.12.12).
+# Install with: pip install -r environment/python-requirements.txt, then pip install -e .. from the repository root.
+numpy==2.5.4
+scipy==1.18.1
+numba==0.68.0
+llvmlite==0.50.0
+anndata==0.13.4
+pandas==3.0.6
+scanpy==1.12.4
+leidenalg==0.12.0
+igraph==1.0.0
+matplotlib==3.11.2

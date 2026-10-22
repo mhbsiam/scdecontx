@@ -1,0 +1,10 @@
+dataset,method,n,pearson_design,median_pure,median_68,gap,paper_median_68,paper_median_pure,kind,n_doublets,median_singlets,paper_median,doublet_auroc
+"RNA mix, CEL-seq2",scdecontx,258,0.710474,0.233222,0.439119,0.205898,0.4115,0.1808,mixture,,,,
+"RNA mix, SORT-seq",scdecontx,222,0.861331,0.141589,0.393799,0.25221,0.3647,0.0909,mixture,,,,
+"3 lines, 10x",scdecontx,902,,,,,,,single,7,0.125819,0.0881,0.999681
+"3 lines, CEL-seq2",scdecontx,274,,,,,,,single,34,0.149307,0.1099,0.82598
+"3 lines, Drop-seq",scdecontx,225,,,,,,,single,15,0.125146,0.0929,0.992381
+"5 lines, 10x",scdecontx,3918,,,,,,,single,96,0.0683662,0.0496,0.971285
+"5 lines, CEL-seq2 p1",scdecontx,297,,,,,,,single,141,0.149726,0.1313,0.73186
+"5 lines, CEL-seq2 p2",scdecontx,307,,,,,,,single,144,0.159972,0.1396,0.736196
+"5 lines, CEL-seq2 p3",scdecontx,305,,,,,,,single,53,0.119487,0.0922,0.815439
