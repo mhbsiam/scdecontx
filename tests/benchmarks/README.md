@@ -4,7 +4,9 @@ This benchmark compares scDecontX with the reference R implementation of DecontX
 
 ## Summary
 
-scDecontX runs celda's algorithm. From the same initial values it reproduced celda to 6 × 10⁻¹⁵ in contamination and 7 × 10⁻¹³ in counts, with the same number of iterations, and matched R's accuracy on simulated data (MAE 0.088 at 15,000 genes). It was the fastest implementation: 6.3–9.6× faster than celda's EM and 120× faster than a full R `decontX()` call at 20,000 cells × 15,000 genes (0.24 s against 2.3 s and 29 s). On the real datasets of the DecontX paper it reproduced the paper's results: in the 10x human–mouse mixture its contamination matched each cell's fraction of other-species reads (RMSE 0.0002 in human and 0.0013 in mouse cells, against 0.002 and 0.006 in the paper), and in the CellBench RNA mixtures it followed the mixing design. A leave-one-out variant was 3.7× more accurate on simulated data but not on these real data, so scDecontX keeps celda's estimator (Section 3.10).
+scDecontX runs celda's algorithm. From the same initial values it reproduced celda to 6 × 10⁻¹⁵ in contamination and 7 × 10⁻¹³ in counts, with the same number of iterations, and matched R's accuracy on simulated data (MAE 0.088 at 15,000 genes). It was the fastest implementation: 6.3–9.6× faster than celda's EM and 120× faster than a full R `decontX()` call at 20,000 cells × 15,000 genes (0.24 s against 2.3 s and 29 s).
+
+On datasets used in the DecontX paper it recovered the reported qualitative patterns. In the 10x human–mouse mixture, with species labels as clusters and no background, estimated contamination closely matched each cell's other-species UMI fraction (RMSE 0.0002 in human and 0.0013 in mouse cells). This measures cross-species contamination, not total contamination. The paper reported RMSE 0.002 and 0.006 on a different cell selection (12,079 cells against 12,165 here). In the CellBench RNA mixtures, estimates correlated with the designed mixing proportions (Pearson r = 0.71 for CEL-seq2 and 0.86 for SORT-seq), although median estimates differed from the published values. The design does not measure contamination added during library preparation. A leave-one-out variant was 3.7× more accurate on simulated data but not on these real data, so scDecontX keeps celda's estimator (Section 3.10).
 
 ## 1. Implementations
 
@@ -39,7 +41,7 @@ Simulated data come from `celda::simulateContamination` with its defaults (`NRan
 | Dataset | Source | Cells | Truth | Section |
 |---|---|---|---|---|
 | PBMC3k | 10x Genomics (copy in the omicverse repository) | 2,700 | none | 3.5 |
-| hgmm_12k, human HEK293T and mouse NIH3T3 cells | 10x Genomics, raw matrix with empty droplets | 12,165 after removing multiplets | other-species reads in each cell | 3.8 |
+| hgmm_12k, human HEK293T and mouse NIH3T3 cells | 10x Genomics, raw matrix with empty droplets | 12,165 after removing multiplets | other-species UMI fraction in each cell | 3.8 |
 | CellBench RNA mixtures, CEL-seq2 and SORT-seq | Tian et al. 2019, `LuyiTian/sc_mixology` | 258 and 222 pseudo-cells | mixing design: 0 or 32% other cell lines | 3.9 |
 | CellBench single cells, 3 or 5 lung adenocarcinoma lines; 10x, CEL-seq2, Drop-seq | same | 225–3,918 per dataset | demuxlet doublets | 3.9 |
 | pbmc4k and 8 flow-sorted PBMC populations | 10x Genomics (Zheng et al. 2017) | 4,336 | marker expression of populations sorted into separate channels | 3.9 |
@@ -120,7 +122,7 @@ With the species as clusters, scDecontX matched the cross-species fraction (r = 
 
 `scripts/cellbench.py` runs on CellBench (Tian et al. 2019) after `scripts/export_cellbench.R` exports its `SingleCellExperiment`s; `scripts/pbmc.py` runs on pbmc4k and the sorted PBMCs. Tables: [`results/cellbench.md`](results/cellbench.md), [`results/pbmc.md`](results/pbmc.md).
 
-**RNA mixtures.** RNA of three cell lines was mixed in known proportions and diluted to single-cell amounts. A pseudo-cell's cluster is the line with more than half of its RNA, so expected contamination is 0 for pure pseudo-cells and 0.32 for 68/16/16 mixtures. scDecontX followed the design (r = 0.71 for CEL-seq2, 0.86 for SORT-seq): median contamination 0.23 and 0.14 for pure pseudo-cells, 0.44 and 0.39 for mixtures (paper: 0.18, 0.09, 0.41, 0.36; the paper attributes contamination of pure pseudo-cells to library preparation).
+**RNA mixtures.** RNA of three cell lines was mixed in known proportions and diluted to single-cell amounts. A pseudo-cell's cluster is the line with more than half of its RNA, so the designed other-line fraction is 0 for pure pseudo-cells and 0.32 for 68/16/16 mixtures. scDecontX estimates correlated with that fraction (Pearson r = 0.71 for CEL-seq2, 0.86 for SORT-seq): median contamination 0.23 and 0.14 for pure pseudo-cells, 0.44 and 0.39 for mixtures (paper: 0.18, 0.09, 0.41, 0.36; the paper attributes contamination of pure pseudo-cells to library preparation). These correlations show association with the design, not absolute accuracy against total contamination.
 
 **Single cells.** Median singlet contamination was 0.07–0.16 per dataset (paper: 0.05–0.14), lowest for 10x with five lines. Contamination ranked demuxlet's doublets above singlets with AUROC 0.97–1.00 for 10x and Drop-seq, 0.73–0.83 for CEL-seq2.
 

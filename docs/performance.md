@@ -2,7 +2,7 @@
 
 ## Threads
 
-The EM runs in parallel Numba kernels on all cores. Large clusters are split into runs of cells of similar size, so the speed does not depend on how the cells are spread over clusters. The result does not depend on the number of threads. To limit the threads, set `NUMBA_NUM_THREADS` before Python starts.
+The main count operations run in parallel Numba kernels using the available Numba threads. Cluster accumulation is split into work units with similar numbers of nonzeros, reducing load imbalance when cluster sizes are uneven. Runtime still depends on the data and cluster structure. The result does not depend on the number of threads. To limit the threads, set `NUMBA_NUM_THREADS` before Python starts.
 
 ## The first call
 

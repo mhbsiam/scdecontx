@@ -11,7 +11,7 @@ dx.run(adata, "leiden")
 ```
 
 - **The same results as R.** scDecontX implements celda's `decontX` with its defaults, prior fit and outputs. From the same initial values the contamination estimates agree with R to within 6e-15 and the corrected counts to within 7e-13 (pbmc3k; 4e-14 on simulated data).
-- **Fast.** Sparse Numba kernels over the nonzeros only, on all cores. On 20,000 cells × 15,000 genes a call takes 0.24 s, against 2.3 s for celda's EM and 29 s for a full R `decontX()` call.
+- **Fast.** Parallel Numba kernels process the nonzero counts, with separate updates to the cluster gene profiles. On 20,000 cells × 15,000 genes a call takes 0.24 s, against 2.3 s for celda's EM and 29 s for a full R `decontX()` call.
 - **scverse-native.** Raw counts from `.X` or a layer, clusters from `obs`, batches, empty droplets as background; results in `obs["scdecontx_contamination"]`, `layers["scdecontx_counts"]` and `uns["scdecontx"]`.
 
 ## Install
@@ -104,8 +104,8 @@ Wall time of one call by number of cells (median of 3 warm calls), each implemen
 
 **scDecontX on the DecontX paper's real datasets**
 
-- **Human–mouse mixture**: matches each cell's measured other-species fraction (r = 1.000; RMSE 0.0002–0.0013). The paper reports 0.002–0.006 on a different cell selection (12,079 cells against 12,165 here).
-- **CellBench RNA mixtures**: follows the mixing design (r = 0.71 and 0.86).
+- **Human–mouse mixture**: with species labels as clusters and no background, estimates closely match each cell's other-species UMI fraction (r = 1.000; RMSE 0.0002–0.0013). This measures cross-species contamination, not total contamination. The paper reports 0.002–0.006 on a different cell selection (12,079 cells against 12,165 here).
+- **CellBench RNA mixtures**: estimates correlate with the designed mixing proportions (Pearson r = 0.71 for CEL-seq2 and 0.86 for SORT-seq). Median estimates differ from the published values; the design does not measure contamination added during library preparation.
 - **pbmc4k**: the share of cells with other cell types' markers differs from flow-sorted references by 0.42 on average (over pairs of types) before correction and by 0.038–0.046 after.
 - **With empty droplets as `background`**: total contamination agrees with an estimate derived from the cross-species fraction and the composition of the same empty droplets (MAE 0.003). This checks consistency with the background, not an independent measurement.
 

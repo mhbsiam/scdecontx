@@ -25,10 +25,11 @@ From the same initial `theta`, scDecontX and celda agree to within 6e-15 in ever
 
 ## Why it is fast
 
-celda loops over the cells in single-threaded C++ for every iteration. scDecontX keeps one native count for each nonzero of the CSR matrix and runs the EM in parallel Numba kernels over the nonzeros only:
+celda 1.24.0 processes cells and their nonzero counts serially in C++ in each EM iteration. scDecontX stores one estimated native count for each nonzero of the CSR matrix and uses parallel Numba kernels for the main count operations:
 
 - the E-step runs in parallel over cells;
-- the cluster profiles are summed in parallel over runs of cells of similar size within each cluster, so one large cluster does not leave cores idle;
+- cluster accumulation runs in parallel over work units with similar numbers of nonzeros within each cluster, reducing load imbalance when cluster sizes are uneven;
+- profile updates also traverse dense cluster × gene arrays;
 - every sum has a fixed order, so the result does not depend on the number of threads.
 
 On 20,000 cells × 15,000 genes a call takes 0.24 s, against 2.3 s for celda's EM and 29 s for a full `decontX()` call, which also computes a UMAP. `dtype="float32"` halves the memory of the counts and the output.
@@ -43,7 +44,7 @@ Numbers from `tests/benchmarks/`, all implementations at their defaults.
 | Max contamination difference from R, same start | 6e-15 | – | 0.061 | 9e-15 |
 | Run time, 20,000 cells × 15,000 genes | **0.24 s** | 29 s (2.3 s EM only) | 1.7 s | 5.0 s |
 
-On the real datasets of the DecontX paper, which have an external reference, scDecontX reproduces the paper's results: in the 10x human–mouse mixture its contamination matches each cell's fraction of other-species reads (RMSE 0.0002 in human and 0.0013 in mouse cells); in the CellBench RNA mixtures it follows the mixing design (r = 0.71 and 0.86).
+On datasets used in the DecontX paper, scDecontX recovers the reported qualitative patterns. In the 10x human–mouse mixture, using species labels as clusters and no background, its estimated contamination closely matches each cell's other-species UMI fraction (RMSE 0.0002 in human and 0.0013 in mouse cells). This measures cross-species contamination, not total contamination, and the cell selection differs from the paper (12,165 cells here against 12,079). In the CellBench RNA mixtures, estimates correlate with the designed mixing proportions (Pearson r = 0.71 for CEL-seq2 and 0.86 for SORT-seq), although the median estimates differ from the published values. The mixing design does not measure contamination added during library preparation.
 
 ## Limits of the model
 
